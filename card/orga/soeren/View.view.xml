@@ -1,0 +1,28 @@
+<mvc:View 
+    xmlns:core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc"	  
+    xmlns="sap.m" 
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    width="100%"	  
+    displayBlock="true"
+    controllerName="abapconf.web.abapconf.card.orga.soeren.Main">
+
+    <!--
+	<Image id="img" width="100%" src="./card/orga/soeren/SoerenSchlegel.png"></Image>
+    -->
+    <Avatar
+        src="./card/orga/soeren/SoerenSchlegel.png"
+        displaySize="Custom"
+		customDisplaySize="250px"
+        showBorder="true"/>
+    <VBox >
+        <FlexBox alignItems="Start" justifyContent="SpaceBetween">
+			<Label text="{i18n>cardCompany} " labelFor="txtCompany" /> 
+            <Text id="txtCompany" text="js-soft GmbH" />
+		</FlexBox>
+        <FlexBox alignItems="Start" justifyContent="SpaceBetween">
+			<Label text="{i18n>cardPosition}" /> 
+            <Text text="ABAP Guru" />
+		</FlexBox>
+    </VBox>
+</mvc:View>

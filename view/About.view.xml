@@ -1,0 +1,180 @@
+<mvc:View
+    controllerName="abapconf.web.abapconf.controller.About"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="about" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            <!-- image -->
+            <Image
+                src="./img/SAPBall.jpeg"
+                mode="Background"
+                height="300px"
+                width="100%" >
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Image>
+
+             <!-- H1 -->
+             <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H1" titleStyle="H1" text="{i18n>aboutH1}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <FlexBox
+				height="20px"
+				alignItems="Center"
+                justifyContent="Center"
+                class="sapUiLargeMarginBottom">
+                <html:div class="seperator"></html:div>
+			</FlexBox>
+
+            <!-- 1 Text About -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>aboutP1}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            
+            
+
+            <!-- 3 H3 For who-->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H1" titleStyle="H1" text="{i18n>aboutH3}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+
+            <!-- 3 Text for who -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>aboutP3}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>                
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- 3-1 Text for who -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>                
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>aboutP31}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+
+            
+            <!-- 4 Who we are -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title wrapping="true" level="H1" titleStyle="H1" text="{i18n>aboutH4}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+
+            <!-- 4 Who we are -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>aboutP4}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- 2 H2 Motivation -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H1" titleStyle="H1" text="{i18n>aboutH2}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- 2 Text motivation -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>aboutP2}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

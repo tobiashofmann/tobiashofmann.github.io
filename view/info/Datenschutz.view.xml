@@ -1,0 +1,270 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.info.Datenschutz"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="datenschutz" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            
+            <!-- H1 -->
+            <FlexBox
+				height="100px"
+				alignItems="Center"
+				justifyContent="Center">
+				<Title level="H1" titleStyle="H1" text="{i18n>datenschutzH1}"> </Title>
+			</FlexBox>
+            <!-- Text P1 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+				alignItems="Start"
+				justifyContent="Start">
+				 <Text text="{i18n>datenschutzP1}">
+                </Text>
+			</FlexBox>
+            <!-- H2 -->
+            <FlexBox
+				alignItems="Start"
+				justifyContent="Start">
+				<Title class="sapUiLargeMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH2}"> </Title>
+			</FlexBox>
+            <!-- Adresse und Kontakt -->    
+            <FlexBox                
+				alignItems="Start"
+				justifyContent="Start">
+                <VBox class="sapUiResponsiveMargin" >
+                    <Text text="Tobias Hofmann" />
+                    <Text text="Huttenstrasse 46" />
+                    <Text text="76646 Bruchsal" />                    
+                </VBox>
+			</FlexBox>
+            <!-- H3 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH3}"> </Title>
+            </FlexBox>
+            <!-- P3 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="- {i18n>datenschutzP3}">
+                </Text>
+            </FlexBox>
+            <!-- P4 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="- {i18n>datenschutzP4}">
+                </Text>
+            </FlexBox>
+            <!-- H4 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH4}"> </Title>
+            </FlexBox>
+            <!-- P5 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="- {i18n>datenschutzP5}">
+                </Text>
+            </FlexBox>
+            <!-- H5 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH5}"> </Title>
+            </FlexBox>
+            <!-- P6 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="- {i18n>datenschutzP6}">
+                </Text>
+            </FlexBox>
+            <!-- H6 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH6}"> </Title>
+            </FlexBox>
+            <!-- P7 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP7}">
+                </Text>
+            </FlexBox>
+            <!-- H7 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH7}"> </Title>
+            </FlexBox>
+            <!-- P8 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP8}">
+                </Text>
+            </FlexBox>
+            <!-- H8 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH8}"> </Title>
+            </FlexBox>
+            <!-- P9 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP9}">
+                </Text>
+            </FlexBox>
+            <!-- H9 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH9}"> </Title>
+            </FlexBox>
+            <!-- P10 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP10}">
+                </Text>
+            </FlexBox>
+            <!-- H10 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH10}"> </Title>
+            </FlexBox>
+            <!-- P11 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP11}">
+                </Text>
+            </FlexBox>
+            <!-- H11 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH11}"> </Title>
+            </FlexBox>
+            <!-- P12 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP12}">
+                </Text>
+            </FlexBox>
+            <!-- H12 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH12}"> </Title>
+            </FlexBox>
+            <!-- P13 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP13}">
+                </Text>
+            </FlexBox>
+            <!-- H13 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH13}"> </Title>
+            </FlexBox>
+            <!-- P14 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP14}">
+                </Text>
+            </FlexBox>
+            <!-- H14 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH14}"> </Title>
+            </FlexBox>
+            <!-- P15 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP15}">
+                </Text>
+            </FlexBox>
+            <!-- H15 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH15}"> </Title>
+            </FlexBox>
+            <!-- P16 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP16}">
+                </Text>
+            </FlexBox>
+            <!-- H16 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH16}"> </Title>
+            </FlexBox>
+            <!-- P17 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP17}">
+                </Text>
+            </FlexBox>
+            <!-- H17 -->
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Start">
+                <Title class="sapUiResponsiveMargin"  level="H3" titleStyle="H3" text="{i18n>datenschutzH17}"> </Title>
+            </FlexBox>
+            <!-- P18 -->
+            <FlexBox
+                class="sapUiResponsiveMargin" 
+                alignItems="Start"
+                justifyContent="Start">
+                <Text text="{i18n>datenschutzP18}">
+                </Text>
+            </FlexBox>
+
+
+          
+
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

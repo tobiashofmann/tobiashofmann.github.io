@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/BaseController"],function(n){"use strict";return n.extend("abapconf.web.abapconf.controller.CfS",{onInit:function(){window.addEventListener("hashchange",function(){_paq.push(["setCustomUrl","/#/cfs"+window.location.hash.substr(1)]);_paq.push(["setDocumentTitle","Call for Speakers"]);_paq.push(["trackPageView"])})}})});

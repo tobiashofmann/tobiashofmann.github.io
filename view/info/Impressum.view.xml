@@ -1,0 +1,109 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.info.Impressum"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="impressum" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            
+            <!-- H1 -->
+            <FlexBox
+				height="100px"
+				alignItems="Center"
+				justifyContent="Center">
+				<Title level="H1" titleStyle="H1" text="{i18n>impressumH1}"> </Title>
+			</FlexBox>
+
+            <!-- H2 -->
+            <FlexBox
+				alignItems="Start"
+				justifyContent="Start">
+				<Title class="sapUiLargeMargin"  level="H3" titleStyle="H3" text="{i18n>impressumH2}"> </Title>
+			</FlexBox>
+
+            <!-- Adresse und Kontakt -->    
+            <FlexBox                
+				alignItems="Start"
+				justifyContent="Start">
+                <VBox class="sapUiLargeMargin" >
+                    <Text text="Tobias Hofmann" />
+                    <Text text="Huttenstrasse 46" />
+                    <Text text="76646 Bruchsal" />
+                    <Text text="E-Mail: tobias.a.hofmann@gmail.com" />
+                </VBox>
+			</FlexBox>
+            
+
+            <!-- H3 Haftungsausschluss -->
+            <FlexBox
+				height="50px"
+				alignItems="Center"
+				justifyContent="Center">
+				<Title level="H2" titleStyle="H2" text="{i18n>impressumH3}"> </Title>
+			</FlexBox>
+
+            <!-- H4 Haftung für Inhalte -->
+            <FlexBox
+                class="sapUiLargeMargin" 
+				height="50px"
+				alignItems="Start"
+				justifyContent="Start">
+				<Title level="H4" titleStyle="H4" text="{i18n>impressumH4}"> </Title>
+			</FlexBox>
+
+            <!-- Text P1 -->
+            <FlexBox
+                class="sapUiLargeMargin" 
+				alignItems="Start"
+				justifyContent="Start">
+				 <Text text="{i18n>impressumP1}">
+                </Text>
+			</FlexBox>
+
+            <!-- H4 Haftung für Links -->
+            <FlexBox
+                class="sapUiLargeMargin" 
+				height="50px"
+				alignItems="Start"
+				justifyContent="Start">
+				<Title level="H4" titleStyle="H4" text="{i18n>impressumH5}"> </Title>
+			</FlexBox>
+
+            <!-- Text P2 -->
+            <FlexBox
+                class="sapUiLargeMargin" 
+				alignItems="Start"
+				justifyContent="Start">
+				 <Text text="{i18n>impressumP2}">
+                </Text>
+			</FlexBox>
+
+            <!-- H4 Urheberrecht -->
+            <FlexBox
+                class="sapUiLargeMargin" 
+				height="50px"
+				alignItems="Start"
+				justifyContent="Start">
+				<Title level="H4" titleStyle="H4" text="{i18n>impressumH6}"> </Title>
+			</FlexBox>
+
+            <!-- Text P2 -->
+            <FlexBox
+                class="sapUiLargeMargin" 
+				alignItems="Start"
+				justifyContent="Start">
+				 <Text text="{i18n>impressumP3}">
+                </Text>
+			</FlexBox>
+
+
+
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/info/Coc.controller"],function(o){"use strict";QUnit.module("Code of Conduct Controller");QUnit.test("Test onInit of Coc controller",function(n){var t=new o;t.onInit();n.ok(t)})});

@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/info/CfS.controller"],function(n){"use strict";QUnit.module("Call for Speaker Controller");QUnit.test("Test onInit of CfS controller",function(o){var t=new n;t.onInit();o.ok(t)})});

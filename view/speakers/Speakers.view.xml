@@ -1,0 +1,114 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.speakers.Speakers"
+   xmlns="sap.m"
+   displayBlock="true"
+   xmlns:l="sap.ui.layout"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:tnt="sap.tnt"
+   xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="speakers" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            <!-- image -->
+<!--
+            <Image
+                src="./img/SAPBall.jpeg"
+                height="300px"
+                width="100%" >
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Image>
+-->
+            <!-- H1 -->
+<!--            
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H1" titleStyle="H1" text="{i18n>speakerH1}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <FlexBox
+				height="20px"
+				alignItems="Center"
+                justifyContent="Center"
+                class="sapUiLargeMarginBottom">
+                <html:div class="seperator"></html:div>
+			</FlexBox>
+-->
+           <!-- Text Speakers -->
+           <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Center">
+                    <Text wrapping="true" wrappingType="Hyphenated" width="100%" text="{i18n>speakerP1}" textAlign="Center"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Link to Call for Speaker -->
+            <!--
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Center">
+                    <Link href="#/cfs" subtle="false" width="100%" text="{i18n>cfsLinkText}" textAlign="Center"  class="textReadability"></Link>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            -->
+
+           <!-- dummy image hour glass -->     
+<!--                 
+            <FlexBox				
+                class="sapUiLargeMarginBeginEnd" 
+                alignItems="Center"
+                justifyContent="Center">
+                <Image id="img" width="100%" src="./img/coming-soon-hour-glass-4721933_640.png"></Image>
+            </FlexBox>
+-->        
+
+            <!-- speaker directory -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Center">
+                    <mvc:XMLView viewName="abapconf.web.abapconf.view.speakers.SpeakersTable" type="XML" />
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+            
+
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

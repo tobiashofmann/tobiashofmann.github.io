@@ -1,0 +1,74 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.orga.OrgaTeam"
+   displayBlock="true"
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core"
+   xmlns:l="sap.ui.layout"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="speakers" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            <!-- image -->
+            <Image
+                src="./img/SAPBall.jpeg"
+                mode="Background"
+                height="300px"
+                width="100%" >
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Image>
+
+            <!-- H1 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H1" titleStyle="H1" wrapping="true" wrappingType="Hyphenated" text="{i18n>orgaTeamMeet}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <FlexBox
+				height="20px"
+				alignItems="Center"
+                justifyContent="Center"
+                class="sapUiLargeMarginBottom">
+                <html:div class="seperator"></html:div>
+			</FlexBox>
+
+           <!-- Text Speakers -->
+           <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Center">
+                    <Text width="100%" text="{i18n>orgaP1}" textAlign="Center"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            
+            <core:Fragment fragmentName="abapconf.web.abapconf.view.orga.People" type="XML" />
+
+           
+
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

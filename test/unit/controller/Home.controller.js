@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/Home.controller"],function(o){"use strict";QUnit.module("Home Controller");QUnit.test("Test onInit of  Home controller",function(n){var e=new o;e.onInit();n.ok(e)})});

@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/info/Committee.controller"],function(o){"use strict";QUnit.module("Committee Controller");QUnit.test("Test onInit of Committee controller",function(t){var n=new o;n.onInit();t.ok(n)})});

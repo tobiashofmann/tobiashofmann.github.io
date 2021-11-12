@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/info/Manifesto.controller"],function(n){"use strict";QUnit.module("Manifesto Controller");QUnit.test("Test onInit of Manifesto controller",function(o){var t=new n;t.onInit();o.ok(t)})});

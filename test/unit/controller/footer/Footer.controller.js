@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/footer/Footer.controller"],function(o){"use strict";QUnit.module("Footer Controller");QUnit.test("Test onInit of Footer controller",function(t){var n=new o;n.onInit();t.ok(n)})});

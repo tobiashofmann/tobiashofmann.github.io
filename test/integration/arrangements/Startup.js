@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(a){"use strict";return a.extend("abapconf.web.abapconf.test.integration.arrangements.Startup",{iStartMyApp:function(a){var t=a||{};t.delay=t.delay||5;this.iStartMyUIComponent({componentConfig:{name:"abapconf.web.abapconf",async:true,manifest:true},hash:t.hash,autoWait:t.autoWait})}})});

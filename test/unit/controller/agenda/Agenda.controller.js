@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/agenda/Agenda.controller"],function(n){"use strict";QUnit.module("Agenda Controller");QUnit.test("Test onInit of Agenda controller",function(o){var e=new n;e.onInit();o.ok(e)})});

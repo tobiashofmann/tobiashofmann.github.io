@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:w="sap.ui.integration.widgets"    
+    >
+<!--
+    <w:Card manifest="../card/speakers/karl/Speaker.json" width="auto" height="auto"/>
+    <w:Card manifest="../card/speakers/ingo/Speaker.json" width="auto" height="auto"/>
+-->
+    <w:Card manifest="../card/speakers/andre/Speaker.json" width="auto" height="auto"/>    
+    <w:Card manifest="../card/speakers/lars/Speaker.json" width="auto" height="auto"/>
+
+</core:FragmentDefinition>

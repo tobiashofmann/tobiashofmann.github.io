@@ -1,0 +1,191 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.speakers.speakerDetail.SpeakerDetail"
+   xmlns="sap.m"
+   displayBlock="true"
+   xmlns:l="sap.ui.layout"
+   xmlns:f="sap.ui.layout.form"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:tnt="sap.tnt"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:core="sap.ui.core">
+   
+    <Page id="speakers" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            <!-- image -->
+            <Image
+                src="./img/SAPBall.jpeg"
+                mode="Background"
+                height="300px"
+                width="100%" >
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Image>
+
+            <!-- H1 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H1" titleStyle="H1" text="{speakers>firstname} {speakers>lastname}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Short Bio -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H3" titleStyle="H3" wrapping="true" textAlign="Center" wrappingType="Hyphenated" text="{speakers>shortBio}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <FlexBox
+				height="20px"
+				alignItems="Center"
+                justifyContent="Center"
+                class="sapUiLargeMarginBottom">
+                <html:div class="seperator"></html:div>
+			</FlexBox>
+
+           
+            <!-- speaker info -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                
+                <!-- picture -->
+                <Image 
+                    id="img" 
+                    width="100%"
+                    src="{speakers>picture}" 
+                    densityAware="false">
+                    <layoutData>
+                        <l:GridData span="XL2 L2 M4 S12"/>
+                    </layoutData> 
+                </Image>
+
+                <!-- info -->
+                <f:SimpleForm id="sfSpeakerInfo"
+                    editable="false"
+                    layout="ResponsiveGridLayout"
+                    labelSpanXL="2"
+                    labelSpanL="2"
+                    labelSpanM="2"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="0"
+                    emptySpanL="0"
+                    emptySpanM="0"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="true" >
+                    <f:content>
+                        <Label text="{i18n>speakerDetailsCompany}" />
+                        <Text text="{speakers>company}" />
+                        <Label text="{i18n>speakerDetailsWeb}" />
+                        <Link text="{speakers>companyWeb}" target="_blank" subtle="true" href="{speakers>companyWeb}" />
+                        <Label text="{i18n>speakerDetailsFunction}" />
+                        <Text text="{speakers>function}" />
+                        <Label text="{i18n>speakerDetailsBio}" />
+                        <Text text="{speakers>longBio}" />
+                        <Label text="{i18n>speakerDetailsTwitter}" />
+                        <Link text="@{speakers>twitter}" target="_blank" subtle="true" href="https://www.twitter.com/{speakers>twitter}" />
+                        <Label text="{i18n>speakerDetailsLinkedIn}" />
+                        <Link text="{speakers>linkedIn}" target="_blank" subtle="true" href="{speakers>linkedIn}"/>
+                        <Label text="{i18n>speakerDetailsTags}" />
+                        <HBox
+                            items="{
+                                path: 'speakers>tags'
+                            }">
+                            <tnt:InfoLabel
+                                class="sapUiSmallMargin"
+                                text="{speakers>name}"
+                                displayOnly="false"
+                                colorScheme= "{speakers>color}" />                                                   
+                        </HBox> 
+                    </f:content>  
+                    <f:layoutData>
+                        <l:GridData span="XL6 L6 M8 S12"/>
+                    </f:layoutData> 
+                </f:SimpleForm>
+                    <!--
+                    <l:layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </l:layoutData> 
+                -->
+                
+                    
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Session for speaker -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <List
+                    id="myList"
+                    headerText="{i18n>speakerDetailsSessions}"
+                    items="{
+                        path: 'speakers>sessions'
+                    }">
+                    <items>
+                        <CustomListItem class="sapUiSmallMargin">
+                            <FlexBox alignItems="Start" justifyContent="SpaceBetween">
+                                <VBox>
+                                    <Title wrapping="true" wrappingType="Normal" level="H3" titleStyle="H3" text="{speakers>title}" />
+                                    <Text wrapping="true" wrappingType="Normal" text="{speakers>abstract}" />
+                                    
+                                </VBox>
+                                <HBox
+                                    wrap="Wrap"
+                                    items="{
+                                        path: 'speakers>tags'
+                                    }">
+                                    <tnt:InfoLabel
+                                        class="sapUiSmallMargin"
+                                        text="{speakers>name}"
+                                        displayOnly="false"
+                                        colorScheme= "{speakers>color}" />                                                   
+                                </HBox> 
+                            </FlexBox>
+                        </CustomListItem>
+                    </items>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </List>
+                  
+
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+            
+
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

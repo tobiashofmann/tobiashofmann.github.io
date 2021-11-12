@@ -1,0 +1,229 @@
+<mvc:View
+    controllerName="abapconf.web.abapconf.controller.info.CfS"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="cfs" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            <!-- image -->
+            <Image
+                src="./img/SAPBall.jpeg"
+                mode="Background"
+                height="300px"
+                width="100%" >
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Image>
+
+            <!-- H1 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title wrapping="true" level="H1" textAlign="Center" titleStyle="H1" text="{i18n>cfsH1}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <FlexBox
+				height="20px"
+				alignItems="Center"
+                justifyContent="Center"
+                class="sapUiLargeMarginBottom">
+                <html:div class="seperator"></html:div>
+			</FlexBox>
+            
+            <!-- H2 Untertitel -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title wrapping="true" textAlign="Center" level="H3" titleStyle="H3" text="{i18n>cfsH2}" class="textBold"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Text P1 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>cfsP1}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Link -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Center">
+                    <Link text="ABAPConf 2021 Call for Speakers" href="https://forms.gle/uCLQVUXvH5h51Tvi8" target="_blank" textAlign="Center" enabled="false" class="textReadability sapUiLargeMarginBegin" />
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Text P2 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>cfsP2}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+            <!-- image -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"                
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <Image
+                    src="./img/CallForSpeaker.jpg"
+                    mode="Image"
+                    height="100%"
+                    width="100%"
+                    >
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </Image>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+
+            <!-- Text P3 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>cfsP3}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Text P4 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>cfsP4}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!-- Text P5 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>cfsP5}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            
+            <!-- Text Was wir suchen -->
+            <!--
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <VBox alignItems="Start" justifyContent="Start">
+                    <Text width="100%" text="Wir wollen eine Agenda anbieten die Einsteiger, Fortgeschrittene und Experten anspricht. Daher suchen wir Vorträge zu den folgenden Themen und Vorkentnissen" textAlign="Begin"  class="textReadability"></Text>
+                    <Text width="100%" text="- Grundlagen von ABAP und der Programmierung" textAlign="Begin"  class="textReadability"></Text>
+                    <Text width="100%" text="- Tips &amp; Tricks im täglichen Umgang mit ABAP" textAlign="Begin"  class="textReadability"></Text>
+                    <Text width="100%" text="- On-premise und Cloud" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </VBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            -->
+            <!-- Text P6 -->
+            <!--
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>cfsP6}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            -->
+            <!-- Text P7 -->
+            <!--
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Center">
+                    <Text width="100%" text="{i18n>cfsP7}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            -->            
+           
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

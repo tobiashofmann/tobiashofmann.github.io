@@ -1,0 +1,44 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "abapconf.web.abapconf.card.speakers.ingo",
+		"type": "card",
+		"title": "Featured Speaker",
+		"subTitle": "Ingo Bräuninger",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "Ingo Bräuninger",
+		"info": "Ingo Bräuninger",
+		"description": "Ingo Bräuninger",
+		"tags": {
+			"keywords": [
+				"Component",
+				"Card",
+				"Speaker"
+			]
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "abapconf.web.abapconf.card.speakers.ingo.View",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.38",
+			"libs": {
+				"sap.m": {}
+			}
+		}
+	},
+	"sap.card": {
+		"type": "Component",
+		"headerPosition": "Top",
+		"header": {
+			"title": "Ingo Bräuninger",
+			"subTitle": "SAP"
+		}
+	}
+}

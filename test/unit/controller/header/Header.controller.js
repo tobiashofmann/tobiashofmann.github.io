@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/header/Header.controller"],function(e){"use strict";QUnit.module("Header Controller");QUnit.test("Test onInit of Header controller",function(n){var o=new e;o.onInit();n.ok(o)})});

@@ -1,0 +1,31 @@
+[
+    {
+      "date": "2020/11/01",
+      "title": "Idea",
+      "text": "Domain was bought, first ideas written down, Twitter account created.",
+      "links": [
+        {
+          "title": "ABAPConf website",
+          "href": "https://www.abapconf.org",
+          "target": "_blank"
+        },
+        {
+          "title": "Twitter account",
+          "href": "https://twitter.com/AbapConf",
+          "target": "_blank"
+        }
+      ]
+    },    
+    {
+      "date": "2020/12/15",
+      "title": "Hints were made",
+      "text": "There was a first subtle hint that ABAPConf is in the planning phase in a blog.",
+      "links": [
+        {
+          "title": "It's full of stars website",
+          "href": "https://www.itsfullofstars.de/2020/12/we-dont-need-no-education/",
+          "target": "_blank"
+        }
+      ]
+    }
+]

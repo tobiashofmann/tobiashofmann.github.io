@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(n){"use strict";return n.extend("abapconf.web.abapconf.controller.Home",{onInit:function(){}})});

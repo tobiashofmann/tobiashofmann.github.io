@@ -1,0 +1,131 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.footer.Footer"
+   xmlns="sap.m"
+   xmlns:l="sap.ui.layout"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:mvc="sap.ui.core.mvc">
+
+    <Panel class="sapUiLargeMarginTop">
+        <FlexBox
+            
+            alignItems="Center"
+            class="sapUiSmallMarginBegin"
+            justifyContent="Start">
+            <VBox >
+                <Title level="H2" titleStyle="H2" wrapping="true" wrappingType="Hyphenated" text="{i18n>footerFindUs}"/>
+
+                <HBox>
+                    <ImageContent
+                        class="sapUiLargeMarginTop sapUiLargeMarginBottom"
+                        src="./img/Twitter.png"
+                        description="Icon"
+                        press="pressTwitter">
+                    </ImageContent>
+                    <ImageContent
+                        class="sapUiLargeMarginTop sapUiLargeMarginBottom"
+                        src="./img/Eventbrite.png"
+                        description="Icon"
+                        press="pressEventbrite">
+                    </ImageContent>
+                </HBox>
+            
+            </VBox>
+            
+        </FlexBox>
+    </Panel>
+
+
+
+    <l:Grid
+        containerQuery="false"
+        defaultSpan="XL4 L4 M12 S12"
+        hSpacing="1">
+    
+        <VBox>
+            <FlexBox
+                height="50px"
+                alignItems="Center"
+                justifyContent="Center">
+                <Title level="H2" text="{i18n>footerContact}"/>
+            </FlexBox>                
+
+            <Text text="E-Mail: abapconf (at) gmail.com" />
+            <!-- press="handleEmailPress"/>-->
+            
+            <HBox>
+                <Label text="{i18n>footerWebsite}: " labelFor="linkWebsite"/>
+                <Link id="linkWebsite" text=" www.abapconf.org" href="https://www.abapconf.org" target="_blank"/>
+            </HBox>
+
+            <HBox>
+                <Label text="{i18n>footerLogoBy}: " labelFor="linkLogoBy"/>
+                <Link id="linkLogoBy" text=" UNgleich" href="https://www.ungleich-design.de/" target="_blank"/>
+            </HBox>
+
+            <Link text="{i18n>footerHistory}" press="doNavigation($event, 'History')" />
+
+            <layoutData>
+                <FlexItemData growFactor="1" />
+            </layoutData>
+        </VBox>
+
+        <VBox>
+            <FlexBox
+                height="50px"
+                alignItems="Center"
+                justifyContent="Center">
+                <Title level="H2" text="{i18n>footerInfo}"/>
+            </FlexBox>  
+
+            <Link text="{i18n>footerCodeOfConduct}" press="doNavigation($event, 'Coc')" />
+            <Link text="{i18n>footerPC}" press="doNavigation($event, 'Committee')"/>
+            <Link text="{i18n>footerManifesto}" press="doNavigation($event, 'Manifesto')"/>
+            <Link text="{i18n>footerCfS}" press="doNavigation($event, 'CfS')"/>
+            <Link text="{i18n>footerOrgaTeam}" press="doNavigation($event, 'OrgaTeam')"/>
+            <Link text="{i18n>footerFaq}" press="doNavigation($event, 'FAQ')"/>
+            <layoutData>
+                <FlexItemData growFactor="1" />
+            </layoutData>
+        </VBox>
+        
+        <VBox>
+            <FlexBox
+                height="50px"
+                alignItems="Center"
+                justifyContent="Center">
+                <Title level="H2" text="Legal"/>
+            </FlexBox>  
+
+            <Link text="{i18n>footerImpressum}" press="doNavigation($event, 'Impressum')"/>
+            <Link text="{i18n>footerDS}" press="doNavigation($event, 'Datenschutz')"/>
+            
+            <layoutData>
+                <FlexItemData growFactor="1" />
+            </layoutData>
+        </VBox>
+
+    </l:Grid>
+
+    <l:Grid
+        containerQuery="false"
+        defaultSpan="XL2 L2 M12 S12"
+        hSpacing="1">
+        <html:div class="exampleDiv"/>
+         <!-- cookie notice -->
+        <MessageStrip
+            text="{i18n>footerCookieNotice}"
+            showIcon="true"
+            showCloseButton="true"
+            visible="{footerView>/showCookieNotice}"
+            close="confirmCookieNotice"
+            class="sapUiMediumMarginBottom">
+            <layoutData>
+                <l:GridData span="XL8 L8 M12 S12"/>
+            </layoutData>
+        </MessageStrip>
+        <html:div class="exampleDiv"/>
+    </l:Grid>
+
+   
+
+</mvc:View>

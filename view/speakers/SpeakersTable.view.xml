@@ -1,0 +1,114 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.speakers.SpeakersTable"
+   xmlns="sap.m"
+   xmlns:m="sap.m"
+   displayBlock="true"
+   xmlns:l="sap.ui.layout"
+   xmlns:tnt="sap.tnt"
+   xmlns:mvc="sap.ui.core.mvc">
+   
+    <!-- speaker directory -->
+    
+    <Table 
+        id="tblSpeaker"
+        inset="false"
+        contextualWidth="Auto"
+        showSeparators="Inner"
+        itemPress="openSpeakerDetail"
+        items="{
+			path: 'speakers>/',
+			sorter: {
+				path: 'firstname'
+			}
+		}"
+        >
+        
+        <headerToolbar>
+            <OverflowToolbar>
+                <content>                    
+                    <SearchField width="auto" search="doSearch"></SearchField>                    
+                </content>
+            </OverflowToolbar>
+        </headerToolbar>
+    
+        <columns>
+            <Column 
+             >
+                <Text visible="false" text="{i18n>speakersPhoto}" />
+            </Column>
+            
+            <Column 
+                minScreenWidth="Desktop"
+                demandPopin="true">                  
+                <Text visible="true" text="{i18n>speakersShortBio}" />
+            </Column>
+            <Column 
+                minScreenWidth="Desktop"
+                demandPopin="true">                  
+                <Text visible="true" text="{i18n>speakersSessions}" />
+            </Column>
+            <Column  
+                minScreenWidth="Desktop"              
+                demandPopin="true"
+                visible="true" 
+                hAlign="End">
+                <Text text="{i18n>speakersTopics}" />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem 
+                type="Navigation" 
+                >
+
+                <cells>
+                    <HBox alignContent="Start" alignItems="Center">
+                        <Avatar                            
+                            src="{speakers>picture}"
+                            displaySize="L"
+                            imageFitType="Contain"
+                            initials="{speakers>initials}"
+                            badgeIcon="sap-icon://camera"
+                            badgeTooltip= "Photo">                           
+                        </Avatar>
+                        <ObjectIdentifier
+                            class="sapUiSmallMargin"
+                            title="{speakers>firstname} {speakers>lastname}"
+                            text="{speakers>company}"/>
+                    </HBox>
+                    <Text
+                        text="{speakers>shortBio}" />
+                    <VBox
+                        items="{
+                            path: 'speakers>sessions',
+                            sorter: {
+                                path: 'id'
+                            }
+                        }"
+                        >                        
+                        <Link wrapping="true" text="{speakers>title}" />
+                    </VBox>
+                    
+                    <HBox
+                        wrap="Wrap"
+                        alignContent="Center"
+                        justifyContent="Start"
+                        items="{
+                            path: 'speakers>tags'
+                        }">
+                        <tnt:InfoLabel
+                            class="sapUiTinyMargin"
+                            text="{speakers>name}"                            
+                            displayOnly="false"
+                            colorScheme= "{speakers>color}" />                                                   
+                    </HBox> 
+                    
+                    
+                </cells>
+            </ColumnListItem>
+
+      
+        </items>
+    </Table>
+
+</mvc:View>

@@ -1,0 +1,217 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    >
+
+   <!-- FAQ -->
+   <l:Grid
+    containerQuery="false"
+    defaultSpan="XL2 L2 M1 S12"
+    hSpacing="1">
+    
+    <html:div class="exampleDiv"/>
+
+    <VBox
+        alignItems="Center"
+        justifyContent="Center">
+
+        <l:Grid
+            containerQuery="false"
+            defaultSpan="XL4 L4 M4 S12"
+            hSpacing="1">
+            
+            <NotificationListGroup
+				title="{i18n>faqGroup1}"
+                collapsed="false"
+                showButtons="false"
+                showEmptyGroup="true"
+                type="Inactive"                
+				showCloseButton="false">
+				
+
+				<NotificationListItem
+					title="{i18n>faqItem1}"
+					description="{i18n>faqItem1Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem2}"
+					description="{i18n>faqItem2Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem3}"
+					description="{i18n>faqItem3Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem4}"
+					description="{i18n>faqItem4Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem5}"
+					description="{i18n>faqItem5Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <layoutData>
+                    <l:GridData span="XL12 L12 M12 S12"/>
+                </layoutData>
+			</NotificationListGroup>
+
+            <NotificationListGroup
+				title="{i18n>faqGroup2}"
+                collapsed="true"
+                showButtons="false"
+                showEmptyGroup="true"
+                type="Inactive"                
+				showCloseButton="false">
+				
+
+				<NotificationListItem
+					title="{i18n>faqItem6}"
+					description="{i18n>faqItem6Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem7}"
+					description="{i18n>faqItem7Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem8}"
+					description="{i18n>faqItem8Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <layoutData>
+                    <l:GridData span="XL12 L12 M12 S12"/>
+                </layoutData>
+			</NotificationListGroup>
+
+            <NotificationListGroup
+				title="{i18n>faqGroup3}"
+                collapsed="true"
+                showButtons="false"
+                showEmptyGroup="true"
+                type="Inactive"                
+				showCloseButton="false">
+				
+
+				<NotificationListItem
+					title="{i18n>faqItem9}"
+					description="{i18n>faqItem9Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem10}"
+					description="{i18n>faqItem10Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem11}"
+					description="{i18n>faqItem11Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem12}"
+					description="{i18n>faqItem12Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <NotificationListItem
+					title="{i18n>faqItem13}"
+					description="{i18n>faqItem13Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                <layoutData>
+                    <l:GridData span="XL12 L12 M12 S12"/>
+                </layoutData>
+			</NotificationListGroup>
+
+            <NotificationListGroup
+				title="{i18n>faqGroup4}"
+                collapsed="true"
+                showButtons="false"
+                showEmptyGroup="true"
+                type="Inactive"                
+				showCloseButton="false">
+				<NotificationListItem
+					title="{i18n>faqItem14}"
+					description="{i18n>faqItem14Desc}"
+					showCloseButton="false"
+					unread="true"
+					priority="None"
+                    truncate="true"
+					>
+                </NotificationListItem>
+                
+                <layoutData>
+                    <l:GridData span="XL12 L12 M12 S12"/>
+                </layoutData>
+			</NotificationListGroup>
+
+        </l:Grid>
+
+        <layoutData>
+            <l:GridData span="XL8 L8 M10 S12"/>
+        </layoutData>
+    </VBox>
+
+    <html:div class="exampleDiv"/>
+
+    </l:Grid>
+
+</core:FragmentDefinition>

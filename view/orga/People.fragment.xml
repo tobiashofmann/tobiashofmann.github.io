@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:w="sap.ui.integration.widgets"    
+    >
+
+   <!-- People -->
+   <l:Grid
+    containerQuery="false"
+    defaultSpan="XL2 L1 M1 S12"
+    hSpacing="1">
+    
+    <html:div class="exampleDiv"/>
+
+    <VBox
+        alignItems="Center"
+        justifyContent="Center">
+
+        <l:Grid
+            containerQuery="false"
+            defaultSpan="XL4 L4 M6 S12"
+            hSpacing="1">
+<!--
+            <w:Card class="sapUiResponsiveMargin " manifest="../card/orga/tobias/OrgaTeam.json" width="auto" height="auto"/>
+            <w:Card class="sapUiResponsiveMargin " manifest="../card/orga/soeren/OrgaTeam.json" width="auto" height="auto"/>
+            <w:Card class="sapUiResponsiveMargin " manifest="../card/orga/johann/OrgaTeam.json" width="auto" height="auto"/>
+-->
+            <w:Card class=" " manifest="../card/orga/tobias/OrgaTeam.json" width="auto" height="auto"/>
+            <w:Card class=" " manifest="../card/orga/soeren/OrgaTeam.json" width="auto" height="auto"/>
+            <w:Card class=" " manifest="../card/orga/johann/OrgaTeam.json" width="auto" height="auto"/>
+        </l:Grid>
+
+        <layoutData>
+            <l:GridData span="XL8 L10 M10 S12"/>
+        </layoutData>
+    </VBox>
+
+    <html:div class="exampleDiv"/>
+
+    </l:Grid>
+
+</core:FragmentDefinition>

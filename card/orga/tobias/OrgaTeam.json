@@ -1,0 +1,44 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "abapconf.web.abapconf.card.orga.tobias",
+		"type": "card",
+		"title": "Organization team",
+		"subTitle": "Tobias Hofmann",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "Tobias Hofmann",
+		"info": "Tobias Hofmann",
+		"description": "Tobias Hofmann",
+		"tags": {
+			"keywords": [
+				"Component",
+				"Card",
+				"Orgateam"
+			]
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "abapconf.web.abapconf.card.orga.tobias.View",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.38",
+			"libs": {
+				"sap.m": {}
+			}
+		}
+	},
+	"sap.card": {
+		"type": "Component",
+		"headerPosition": "Top",
+		"header": {
+			"title": "Tobias Hofmann",
+			"subTitle": "DB Systel GmbH"
+		}
+	}
+}

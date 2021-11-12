@@ -1,0 +1,17 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ResponsivePopover
+		id="selectLanguagePopover"
+		title="{i18n>selectLanguageTitle}"
+		class="sapUiContentPadding"
+		placement="Bottom" >
+		
+		<content>
+			<SelectList itemPress="doChangeLanguage">                
+                <core:Item key="de" text="{i18n>selectLanguageGerman}" />
+                <core:Item key="en" text="{i18n>selectLanguageEnglish}" />
+            </SelectList>
+		</content>
+	</ResponsivePopover>
+</core:FragmentDefinition>

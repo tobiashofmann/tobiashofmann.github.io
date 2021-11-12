@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/speakers/Speakers.controller"],function(e){"use strict";QUnit.module("Speakers Controller");QUnit.test("Test onInit of Speakers controller",function(n){var o=new e;o.onInit();n.ok(o)})});

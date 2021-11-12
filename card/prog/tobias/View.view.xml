@@ -1,0 +1,25 @@
+<mvc:View 
+    xmlns:core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc"	  
+    xmlns="sap.m" 
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    width="100%"	  
+    displayBlock="true"
+    controllerName="abapconf.web.abapconf.card.prog.tobias.Main">
+
+    <Avatar
+        src="./card/prog/tobias/TobiasHofmann.png"
+        displaySize="Custom"
+		customDisplaySize="250px"
+        showBorder="true"/>
+    <VBox >
+        <FlexBox alignItems="Start" justifyContent="SpaceBetween">
+			<Label text="{i18n>cardCompany} " labelFor="txtCompany" /> 
+            <Text id="txtCompany" text="DB Systel GmbH" />
+		</FlexBox>
+        <FlexBox alignItems="Start" justifyContent="SpaceBetween">
+			<Label text="{i18n>cardPosition}" /> 
+            <Text text="Architecting UI5" />
+		</FlexBox>
+    </VBox>
+</mvc:View>

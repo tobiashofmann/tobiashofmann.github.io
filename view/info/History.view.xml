@@ -1,0 +1,127 @@
+<mvc:View
+    controllerName="abapconf.web.abapconf.controller.info.History"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:tl="de.itsfullofstars.timeline.controls"
+    xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="cfs" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            <!-- image -->
+            <Image
+                src="./img/SAPBall.jpeg"
+                mode="Background"
+                height="300px"
+                width="100%" >
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Image>
+
+            <!-- H1 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title wrapping="true" level="H1" textAlign="Center" titleStyle="H1" text="{i18n>historyH1}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <FlexBox
+				height="20px"
+				alignItems="Center"
+                justifyContent="Center"
+                class="sapUiLargeMarginBottom">
+                <html:div class="seperator"></html:div>
+			</FlexBox>
+            
+            
+
+            <!-- Text P1 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>historyP1}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+   
+            <!-- History 2021 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <VBox>
+                        <VBox class="sapUiSmallMargin" >
+                        <Title text="2021" />
+                        <tl:Timeline
+                            title="2021"
+                            items="{timeline2021>/}"
+                            >
+                            <tl:items>
+                                <Label text="" />
+                            </tl:items>
+                        </tl:Timeline>
+                        </VBox>
+                    </VBox>
+
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            
+            <!-- History 2020 -->
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <VBox>
+                        <VBox class="sapUiSmallMargin" >
+                        <Title text="2020" />
+                        <tl:Timeline
+                            title="2020"
+                            items="{timeline2020>/}"
+                            >
+                            <tl:items>
+                                <Label text="" />
+                            </tl:items>
+                        </tl:Timeline>
+                        </VBox>
+                    </VBox>
+
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+     
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

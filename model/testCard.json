@@ -1,0 +1,51 @@
+{
+	"sap.app": {
+		"id": "my.new.card",
+		"type": "card",
+		"applicationVersion": {
+		  "version": "1.0.0"
+		}
+	},
+	"sap.card": {
+		"type": "List",
+		"header": {
+			"title": "My Sales Orders",
+			"subTitle": "New sales orders",
+			"icon": {
+				"src": "sap-icon://sales-order"
+			},
+			"actions": [
+				{
+					"type": "Navigation",
+					"url": "http://www.sap.com"
+				}
+			]
+		},
+		"content": {
+			"data": {
+				"json": [
+					{
+						"Name": "Sales order 1",
+						"Description": "The description of sales order 1"
+					},
+					{
+						"Name": "Sales order 2",
+						"Description": "The description of sales order 2"
+					},
+					{
+						"Name": "Sales order 3",
+						"Description": "The description of sales order 3"
+					}
+				]
+			},
+			"item": {
+				"title": {
+					"value": "{Name}"
+				},
+				"description": {
+					"value": "{Description}"
+				}
+			}
+		}
+	}
+}

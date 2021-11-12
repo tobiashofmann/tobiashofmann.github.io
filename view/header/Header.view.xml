@@ -1,0 +1,106 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.header.Header"
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core"
+   xmlns:l="sap.ui.layout"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:mvc="sap.ui.core.mvc">
+   
+   <HBox
+		fitContainer="true"
+        alignItems="Center"
+        justifyContent="Center"
+        height="35px"
+		class="DarkBlue">
+        <core:HTML content="">
+            <core:layoutData>
+                <FlexItemData growFactor="1" styleClass="item3" />
+            </core:layoutData>
+        </core:HTML>
+		
+        <Link text="{i18n>headerRegisterEventbrite}" class="whiteText"  wrapping="true" target="_blank" href="https://www.eventbrite.com/e/abapconf-2021-registration-137607215887">
+            <layoutData>
+                <FlexItemData growFactor="1" />
+            </layoutData>
+        </Link>
+		
+        <HBox 
+            class="DarkBlue" 
+            alignItems="Center"
+            justifyContent="End"
+            >
+            <core:Icon            
+                src="sap-icon://world"
+                press="onSelectLanguage"
+                class="sapUiSmallMarginEnd"
+                color="white" >
+            </core:Icon>  
+              
+        </HBox>
+        
+	</HBox>
+
+    <l:Grid
+        containerQuery="false"
+        defaultSpan="XL1 L1 M1 S1"
+        hSpacing="1">
+        <HBox 
+            alignItems="Center"
+            justifyContent="Start">
+            <FlexBox direction="Column" alignItems="Start">
+                <!-- wenn handy, dann 60px, wenn tablet oder desktop, dann 100 px-->          
+                <Image 
+                    src="./img/abap_logo_weiss.png"
+                    class="sapUiTinyMargin" 
+                    width="{= ${device>/system/phone} ? '60px' : '100px'}" 
+                    height="50%"
+                    press="doNavigation($event, 'Home')"
+                />
+                <layoutData>
+                    <l:GridData span="XL2 L2 M4 S4"/>
+                </layoutData>
+            </FlexBox>
+        
+                <Button id="navAbout" text="{i18n>headerNavAbout}" type="Transparent" class="sapUiResponsiveMargin navText" press="doNavigation($event, 'About')"/>
+                <Button id="navAgenda" text="{i18n>headerNavAgenda}" type="Transparent" class="sapUiResponsiveMargin navText" press="doNavigation($event, 'Agenda')" />
+                <Button id="navSpeakers" text="{i18n>headerNavSpeakers}" type="Transparent" class="sapUiResponsiveMargin navText" press="doNavigation($event, 'Speakers')" />
+                <layoutData>
+                    <l:GridData span="XL10 L10 M8 S8"/>
+                </layoutData>
+        </HBox>
+
+    </l:Grid>
+
+
+    <!-- Link to Call for Speaker -->
+    <!--
+    <l:Grid
+        containerQuery="false"
+        defaultSpan="XL2 L2 M12 S12"
+        hSpacing="1">
+        <html:div class="exampleDiv"/>
+        <HBox alignItems="Center" justifyContent="Center">
+            <Link href="#/cfs" subtle="false" width="100%" text="{i18n>headerCfsLinkText}" textAlign="Center" wrapping="true" class="textReadability"></Link>
+            <layoutData>
+                <l:GridData span="XL8 L8 M12 S12"/>
+            </layoutData>
+        </HBox>
+        <html:div class="exampleDiv"/>
+    </l:Grid>
+    -->
+
+    <l:Grid
+        containerQuery="false"
+        defaultSpan="XL2 L2 M12 S12"
+        hSpacing="1">
+        <html:div class="exampleDiv"/>
+        <HBox alignItems="Center" justifyContent="Center">
+            <Link href="/model/ABAPConf2021.ics" subtle="false" width="100%" text="{i18n>headerSaveTheDay}" textAlign="Center" wrapping="true" class="textReadability"></Link>
+            <layoutData>
+                <l:GridData span="XL8 L8 M12 S12"/>
+            </layoutData>
+        </HBox>
+        <html:div class="exampleDiv"/>
+    </l:Grid>
+
+</mvc:View>

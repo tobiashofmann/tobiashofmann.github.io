@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/info/Impressum.controller"],function(n){"use strict";QUnit.module("Impressum Controller");QUnit.test("Test onInit of Impressum controller",function(o){var e=new n;e.onInit();o.ok(e)})});

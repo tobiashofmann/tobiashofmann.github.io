@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/BaseController"],function(e){"use strict";return e.extend("abapconf.web.abapconf.controller.Committee",{onInit:function(){window.addEventListener("hashchange",function(){_paq.push(["setCustomUrl","/#/committee"+window.location.hash.substr(1)]);_paq.push(["setDocumentTitle","Committee"]);_paq.push(["trackPageView"])})}})});

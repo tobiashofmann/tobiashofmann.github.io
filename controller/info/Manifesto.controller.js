@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/BaseController"],function(n){"use strict";return n.extend("abapconf.web.abapconf.controller.Manifesto",{onInit:function(){window.addEventListener("hashchange",function(){_paq.push(["setCustomUrl","/#/manifesto"+window.location.hash.substr(1)]);_paq.push(["setDocumentTitle","Manifesto"]);_paq.push(["trackPageView"])})}})});

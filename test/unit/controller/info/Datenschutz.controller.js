@@ -1,0 +1,1 @@
+sap.ui.define(["abapconf/web/abapconf/controller/info/Datenschutz.controller"],function(n){"use strict";QUnit.module("Datenschutz Controller");QUnit.test("Test onInit of Datenschutz controller",function(t){var o=new n;o.onInit();t.ok(o)})});

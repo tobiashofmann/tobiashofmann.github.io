@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(n){"use strict";return n.extend("abapconf.web.abapconf.controller.About",{onInit:function(){if(typeof _paq!=="undefined"){window.addEventListener("hashchange",function(){_paq.push(["setCustomUrl","/#/about"+window.location.hash.substr(1)]);_paq.push(["setDocumentTitle","About"]);_paq.push(["trackPageView"])})}}})});

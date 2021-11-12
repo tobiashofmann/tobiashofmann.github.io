@@ -1,0 +1,59 @@
+[{
+  "date": "2021/02/01",
+  "title": "Hibernation",
+  "text": "For the next months, until July, the project went undercover.",
+  "links": []
+},
+{
+  "date": "2021/08/01",
+  "title": "Website",
+  "text": "Creation of website and coding",
+  "links": [{
+    "title": "ABAPConf website",
+    "href": "https://www.abapconf.org",
+    "target": "_blank"
+  }]
+},
+{
+  "date": "2021/09/24",
+  "title": "First announcement",
+  "text": "The first public appearance of ABAPConf 2021 was during a Webinar about RAP from Cadaxo. The webiste went live.",
+  "links": [{
+    "title": "RAP Webinar",
+    "href": "http://www.cadaxo.com/high-class-development/webinar-abap-rap-3/",
+    "target": "_blank"
+  }]
+},
+{
+  "date": "2021/09/29",
+  "title": "Call for Speakers",
+  "text": "Call for speaker opened.",
+  "links": [{
+      "title": "ABAPConf Call for Speakers",
+      "href": "https://www.abapconf.org/#/cfs",
+      "target": "_blank"
+    },
+    {
+      "title": "ABAPConf Call for Speakers form",
+      "href": "https://docs.google.com/forms/d/17v7B0hmD224WQnwynQrknZX6moT1lLtyoWVjYY_Qz3E/edit",
+      "target": "_blank"
+    }
+  ]
+},
+{
+  "date": "2021/10/09",
+  "title": "In the news",
+  "text": "Heise Developers reported about ABAPConf in a news article",
+  "links": [{
+    "title": "Programmieren mit ABAP: Kostenlose Onlineveranstaltung ABAPConf im Dezember",
+    "href": "https://www.heise.de/news/Programmieren-mit-ABAP-Kostenlose-Onlineveranstaltung-ABAPConf-im-Dezember-6212855.html",
+    "target": "_blank"
+  }]
+},
+{
+  "date": "2021/10/29",
+  "title": "Call for Speakers ended",
+  "text": "Call for speakers ended",
+  "links": []
+}
+]
