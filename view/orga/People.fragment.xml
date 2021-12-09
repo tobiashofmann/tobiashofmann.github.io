@@ -22,14 +22,10 @@
             containerQuery="false"
             defaultSpan="XL4 L4 M6 S12"
             hSpacing="1">
-<!--
-            <w:Card class="sapUiResponsiveMargin " manifest="../card/orga/tobias/OrgaTeam.json" width="auto" height="auto"/>
-            <w:Card class="sapUiResponsiveMargin " manifest="../card/orga/soeren/OrgaTeam.json" width="auto" height="auto"/>
-            <w:Card class="sapUiResponsiveMargin " manifest="../card/orga/johann/OrgaTeam.json" width="auto" height="auto"/>
--->
             <w:Card class=" " manifest="../card/orga/tobias/OrgaTeam.json" width="auto" height="auto"/>
             <w:Card class=" " manifest="../card/orga/soeren/OrgaTeam.json" width="auto" height="auto"/>
             <w:Card class=" " manifest="../card/orga/johann/OrgaTeam.json" width="auto" height="auto"/>
+            <w:Card class=" " manifest="../card/prog/domi/OrgaTeam.json" width="auto" height="auto"/>
         </l:Grid>
 
         <layoutData>

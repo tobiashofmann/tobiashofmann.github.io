@@ -9,7 +9,7 @@
             pageId="{/id}"
 			header="{/sessions/0/title}"
 			title="{/firstname} {/lastname}"
-			titleUrl="{titleUrl}"
+			titleUrl="/#/speakers/detail/{/id}"
 			description="{/function}"
 			>
 			<avatar>

@@ -20,14 +20,18 @@ sap.ui.define([
 
 			
 			_onObjectMatched: function (oEvent) {
-				var aData = this.getModel("speakers").getData();				
-				var sId = oEvent.getParameter("arguments").id;
-				var index = aData.findIndex(x => x.id === sId);
 
-				this.getView().bindElement({
-					path: "/" + index,
-					model: "speakers"
-				});
+				var sId = oEvent.getParameter("arguments").id;
+				var oState = this.getModel("speakers").dataLoaded();
+				oState.then( function() {
+					var aData = this.getModel("speakers").getData();
+					var index = aData.findIndex(x => x.id === sId);
+					this.getView().bindElement({
+						path: "/" + index,
+						model: "speakers"
+					});
+				}.bind(this));
+
 			}
 		});
 	});

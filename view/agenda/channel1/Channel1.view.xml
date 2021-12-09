@@ -1,0 +1,100 @@
+<mvc:View
+   controllerName="abapconf.web.abapconf.controller.agenda.channel1.Channel1"
+   displayBlock="true"
+   xmlns="sap.m"
+   xmlns:l="sap.ui.layout"
+   xmlns:tnt="sap.tnt"
+   xmlns:core="sap.ui.core"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:yt="de.itsfullofstars.yt.controls"
+   xmlns:mvc="sap.ui.core.mvc">
+   
+    <Page id="agenda" showHeader="false">
+        <content>
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.header.Header"/>
+
+            <!-- H1 -->
+
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox height="100px" alignItems="Center" justifyContent="Center">
+                    <Title level="H1" titleStyle="H1" text="{i18n>channel1Header}"> </Title>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <FlexBox
+				height="20px"
+				alignItems="Center"
+                justifyContent="Center"
+                class="sapUiLargeMarginBottom">
+                <html:div class="seperator"></html:div>
+			</FlexBox>
+
+
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL2 L2 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                <HBox alignItems="Center" justifyContent="Start">
+                    <Text width="100%" text="{i18n>channel1P1}" textAlign="Begin"  class="textReadability"></Text>
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M12 S12"/>
+                    </layoutData>
+                </HBox>
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+
+            <!--
+            <l:Grid
+                containerQuery="false"
+                defaultSpan="XL4 L3 M12 S12"
+                hSpacing="1">
+                <html:div class="exampleDiv"/>
+                 <Image
+                    src="./img/VideoPlaceholderChannel1.png"
+                    mode="Image"
+                    press="openYTChannel"
+                    height="300px"
+                    width="100%" >
+                    <layoutData>
+                        <FlexItemData growFactor="1" />
+                    </layoutData>
+                </Image>
+
+                <html:div class="exampleDiv"/>
+            </l:Grid>
+            -->
+
+            
+                <l:Grid
+                    containerQuery="false"
+                    defaultSpan="XL4 L3 M12 S12"
+                    hSpacing="1">
+                    <html:div class="exampleDiv"/>
+                    <yt:YTVideo
+                        source="https://www.youtube.com/embed/GqsfIb1RnaU"
+                        width="{= ${device>/system/phone} === true ? '360px' : '600px' }" 
+                        height="{= ${device>/system/phone} === true ? '202px' : '337px' }"
+                        frameborder="0" 
+                        />
+                    <html:div class="exampleDiv"/>
+                </l:Grid>
+            
+            <!-- Agenda -->
+            <core:Fragment fragmentName="abapconf.web.abapconf.view.agenda.channel1.Channel1" type="XML" />
+
+            <!-- footer -->
+            <mvc:XMLView viewName="abapconf.web.abapconf.view.footer.Footer"/>
+        </content>
+    </Page>
+    
+</mvc:View>

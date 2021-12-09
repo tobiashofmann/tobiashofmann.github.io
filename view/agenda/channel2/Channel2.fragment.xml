@@ -1,0 +1,368 @@
+<core:FragmentDefinition 
+	xmlns="sap.m" 
+	xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:tnt="sap.tnt"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <!-- Agenda filter -->
+    <l:Grid
+        containerQuery="false"
+        defaultSpan="XL2 L2 M12 S12"
+        hSpacing="1">
+        <html:div class="exampleDiv"/>
+        <HBox alignItems="Center" justifyContent="Start">
+            <FlexBox direction="Column" alignItems="Start">
+                <Label text="{i18n>agendaFilterLanguage}" />
+                <ComboBox
+                    selectedKey="all"
+                    selectionChange="changeAgendaLanguage">
+                    <core:Item key="de" text="{i18n>agendaFilterLanguageDE}" />
+                    <core:Item key="en" text="{i18n>agendaFilterLanguageEN}" />
+                    <core:Item key="all" text="{i18n>agendaFilterAll}" />
+                </ComboBox>
+            </FlexBox>
+
+            <layoutData>
+                <l:GridData span="XL8 L8 M12 S12"/>
+            </layoutData>
+        </HBox>
+        <html:div class="exampleDiv"/>
+    </l:Grid>
+            
+    <!-- Agenda -->
+    <l:Grid
+        containerQuery="false"
+        defaultSpan="XL2 L2 M12 S12"     
+        visible="{= !${agendaView>/hideTableChannel12} ? true : false}"
+        hSpacing="1">
+        <html:div class="exampleDiv"/>
+        
+        <Table
+            headerText="">
+            <columns>
+                <Column 
+                    width="3.0rem"
+                    hAlign="Begin">
+                    <header>
+                        <Text wrapping="true" wrappingType="Hyphenated" text="{i18n>agendaTableHeaderTime}" />
+                    </header>
+                </Column>
+                <Column
+                    hAlign="Begin" 
+                    visible="{agendaView>/showTrack2}">
+                    <header>
+                        <Text wrapping="true" wrappingType="Hyphenated" text="Channel 2 ({i18n>agendaTableHeaderTrack2})" />
+                    </header>
+                </Column>
+            </columns>
+            <ColumnListItem class="columnSession">
+                <Text text="8:45" class="whiteText"/>
+                <Text text="Warmup" class="whiteText"/>
+            </ColumnListItem>
+            <ColumnListItem class="columnWelcome">
+                <Text text="8:50" class="whiteText"/>
+                <VBox class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Title 
+                        wrapping="true"    
+                        titleStyle="H3"
+                        level="H3" 
+                        text="Channel 1: Welcome" 
+                        class="whiteText"/>
+                    <Text 
+                        wrapping="true" 
+                        width="100%" 
+                        class="whiteText"
+                        text="Welcome to ABAPConf 2021. Introduction to the conference, motivation and agenda. Get to know the people and how to get the best out of the day." />
+                    
+                    <HBox
+                        wrap="Wrap"
+                        width="100%"
+                        alignContent="Center"
+                        justifyContent="Start">
+                        <Label text="Speakers" class="whiteText sapUiSmallMarginTop"/>
+                        <Link text="Tobias Hofmann" class="whiteText sapUiSmallMargin" press="openSpeaker($event, '0853ad75-a59c-45cd-818c-2b3aa67ad87b')" width=""/>
+                        <Link text="Sören Schlegel" class="whiteText sapUiSmallMargin" press="openSpeaker($event, '31968b22-8ead-47d6-b3c7-321a0bd6db9d')" width=""/>
+                        <Link text="Johann Fößleitner" class="whiteText sapUiSmallMargin" press="openSpeaker($event, '194b11a1-d8f7-4e0c-9788-0272b70cfa45')" width=""/>
+                    </HBox>
+                    <HBox
+                        wrap="Wrap"
+                        alignContent="Center"
+                        justifyContent="Start"
+                        >
+                        <tnt:InfoLabel
+                            class="sapUiTinyMargin"
+                            text="Keynote"
+                            displayOnly="false"
+                            colorScheme= "1" />                                  
+                    </HBox> 
+                </VBox>
+            </ColumnListItem>
+
+            <ColumnListItem class="columnKey">
+                <Text text="9:10" class="whiteText"/>
+                <VBox class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Title 
+                        wrapping="true"    
+                        titleStyle="H3"
+                        level="H3" 
+                        width="100%"
+                        text="{speakers>/22/sessions/0/title}"                 
+                        class="whiteText"/>
+                    <Text 
+                        width="100%"
+                        wrapping="true" 
+                        class="whiteText"
+                        text="{speakers>/22/sessions/0/abstract}"/>
+                    <HBox wrap="Wrap"
+                        width="100%" >
+                        <Label text="Speakers" class="whiteText sapUiSmallMarginTop"/>
+                        <Link text="Boris Gebhardt"  press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb788')" class="whiteText sapUiSmallMargin" width="150%"/>
+                        <Link text="Frank Jentsch"  class="whiteText sapUiSmallMargin" width="150%"/>
+                    </HBox>
+                    <HBox
+                        wrap="Wrap"
+                        alignContent="Center"
+                        justifyContent="Start"
+                        >
+                        <tnt:InfoLabel
+                            class="sapUiTinyMargin"
+                            text="Keynote"
+                            displayOnly="false"
+                            colorScheme= "1" />
+                        <tnt:InfoLabel
+                            class="sapUiTinyMargin"
+                            text="ABAP"
+                            displayOnly="false"
+                            colorScheme= "3" />      
+                    </HBox> 
+                </VBox>
+            </ColumnListItem>
+            
+
+            <ColumnListItem class="columnPause">
+                <Text text="10:05" class="whiteText"/>
+                <Text text="{i18n>agendaTablePause}" class="whiteText"/>
+            </ColumnListItem>
+
+            <ColumnListItem >
+                <Text text="10:10"/>
+                <VBox 
+                    blocked="{agendaView>/showGerman}"
+                    class="sapUiSmallMarginBottom sapUiSmallMarginTop" >
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/4/sessions/0/title}" 
+                        press="openSession($event, 4)"/>
+
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd"/>
+                        <Link text="Michael Keller" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb771')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd"/>
+                        <Text text="45 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd"/>
+                        <Text text="Deutsch" class="" />
+                    </HBox>
+                </VBox>
+            </ColumnListItem>          
+
+            <ColumnListItem>
+                <Text text="11:00" />
+               
+                <VBox blocked="{agendaView>/showGerman}" class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/17/sessions/0/title}" 
+                        press="openSession($event, 17)"/>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Link text="Dominik Panzer" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb783')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="30 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="Deutsch" class="" />
+                    </HBox>
+                </VBox>
+
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="11:35" />
+                
+                <VBox blocked="{agendaView>/showGerman}" class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/9/sessions/0/title}" 
+                        press="openSession($event, 9)"/>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd"/>
+                        <Link text="Dr. Wolfgang Röckelein" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb975')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="45 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="Deutsch" class="" />
+                    </HBox>
+                </VBox>
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="12:10" />
+                <Text text="12:25 Meet the speakers" />
+            </ColumnListItem>
+            <ColumnListItem class="columnPause">
+                <Text text="12:25" class="whiteText" />
+                <Text text="12:40 {i18n>agendaTableLunch}" class="whiteText" />
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="13:10" />
+                <VBox blocked="{agendaView>/showGerman}" class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/11/sessions/0/title}" 
+                        press="openSession($event, 11)"/>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Link text="Christopher Graw" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb777')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="45 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="Deutsch" class="" />
+                    </HBox>
+                </VBox>
+            </ColumnListItem>
+            <ColumnListItem >
+                <Text text="14:00" />
+                <VBox blocked="{agendaView>/showGerman}" class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/20/sessions/0/title}" 
+                        press="openSession($event, 20)"/>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Link text="Martin Koch" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb786')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="30 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="Deutsch" class="" />
+                    </HBox>
+                </VBox>
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="14:35" />   
+                <VBox blocked="{agendaView>/showGerman}" class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/14/sessions/0/title}" 
+                        press="openSession($event, 14)"/>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Link text="Uwe Fetzer" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb780')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="45 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="Deutsch" class="" />
+                    </HBox>
+                </VBox>
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="15:25" />
+                <Text text="Meet the speakers" />
+            </ColumnListItem>
+            <ColumnListItem class="columnPause">
+                <Text text="15:40" class="whiteText"/>
+                <Text text="{i18n>agendaTablePause}" class="whiteText"/>
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="16:00" />
+                <VBox blocked="{agendaView>/showEnglish}" class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/16/sessions/0/title}" 
+                        press="openSession($event, 16)"/>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Link text="Lars Hvam" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb782')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="30 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="English" class="" />
+                    </HBox>
+                </VBox>
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="16:35" />
+                <VBox blocked="{agendaView>/showEnglish}" class="sapUiSmallMarginBottom sapUiSmallMarginTop">
+                    <Link 
+                        class="sapMTitle sapMTitleStyleAuto textBlack" 
+                        wrapping="true" 
+                        text="{speakers>/18/sessions/0/title}" 
+                        press="openSession($event, 18)"/>
+                    <HBox class="sapUiSmallMarginTop">
+                        <Label text="Speaker" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Link text="Andre Fischer" press="openSpeaker($event, '39a33820-ddc5-4f99-8422-016622ebb784')" class="" width="150%"/>
+                    </HBox>
+                    <HBox>
+                        <Label text="Duration" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="45 Min" class="" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Language" visible="{= !${device>/system/phone} }" class="sapUiSmallMarginEnd" />
+                        <Text text="English" class="" />
+                    </HBox>
+                </VBox>
+            </ColumnListItem>
+            <ColumnListItem>
+                <Text text="17:25" />
+                <Text text="Meet the speakers" />
+            </ColumnListItem>
+            <ColumnListItem class="columnKey" >
+                <Text text="17:45" class="whiteText"/>
+                <Text text="Closing Keynote" class="whiteText"/>
+            </ColumnListItem>
+            <ColumnListItem class="columnKey">
+                <Text text="18:00" class="whiteText"/>
+                <Text text="Socialising - Stammtisch" class="whiteText"/>
+            </ColumnListItem>
+            <layoutData>
+                <l:GridData span="XL8 L8 M12 S12"/>
+            </layoutData>
+        </Table>    
+
+        <html:div class="exampleDiv"/>
+    </l:Grid>
+
+</core:FragmentDefinition>

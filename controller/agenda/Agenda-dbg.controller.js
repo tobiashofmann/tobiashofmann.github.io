@@ -91,27 +91,44 @@ sap.ui.define([
 			changeAgendaTracks: function(oEvent) {
 				var sKey = oEvent.getParameter("selectedItem").getKey();
 				var oModel = this.getView().getModel("agendaView");
+				var bPhone = this.getModel("device").getProperty("/system/phone");
 
 				switch (sKey)  {
 					case "track1":
 						oModel.setProperty("/showTrack1", true);
 						oModel.setProperty("/showTrack2", false);
 						oModel.setProperty("/showTrack3", false);
+						oModel.setProperty("/showTableChannel3", false);
+						if (bPhone) {
+							oModel.setProperty("/hideTableChannel12", false);
+						}
 						break;
 					case "track2":
 						oModel.setProperty("/showTrack1", false);
 						oModel.setProperty("/showTrack2", true);
 						oModel.setProperty("/showTrack3", false);
+						oModel.setProperty("/showTableChannel3", false);
+						if (bPhone) {
+							oModel.setProperty("/hideTableChannel12", false);
+						}
 						break;
 					case "track3":
 						oModel.setProperty("/showTrack1", false);
 						oModel.setProperty("/showTrack2", false);
 						oModel.setProperty("/showTrack3", true);
+						oModel.setProperty("/showTableChannel3", true);
+						if (bPhone) {
+							oModel.setProperty("/hideTableChannel12", true);
+						}
 						break;
 					default: 
 						oModel.setProperty("/showTrack1", true);
 						oModel.setProperty("/showTrack2", true);
 						oModel.setProperty("/showTrack3", true);
+						oModel.setProperty("/showTableChannel3", true);
+						if (bPhone) {
+							oModel.setProperty("/hideTableChannel12", false);
+						}
 					break;
 				}
 			},

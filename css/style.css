@@ -4,6 +4,76 @@
     padding-left: 0.5rem !important;
 }
 
+.linkCalendar {
+    text-decoration: underline orange;;
+}
+
+.headerBack {
+    background-color: hsl(240, 100%, 5%);    
+}
+.headerNavText .sapMBtnBack, .sapMBtnTransparent{
+    color: orange !important;
+}
+
+@media (min-width: 800px) {
+    .teaserImgBackground {
+        background-image: url("/img/ABAPConfTeaserBack.png") !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #000018;
+    }
+}
+.teaserImgBackground  {
+    background-image: url("/img/ABAPConfTeaserBack.png");
+}
+
+.teaserHeader {
+    font-size: 3rem;
+}
+.teaserBody {
+    font-size: 2rem;
+}
+.teaserBack {
+    background-color: #000018;
+}
+
+.teaserLink {
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.teaserLink:hover {
+    color: orange !important;
+}
+
+.channelLink {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: black !important;
+    font-weight: bolder;
+    font-size: 3rem;
+    border: 2px solid orange;
+    border-radius: 10px;
+    position: relative;
+    text-align: center !important;
+}
+
+.channelLinkHome {
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: black !important;
+    font-weight: bolder;
+    font-size: 3rem;
+    border: 2px solid orange;
+    border-radius: 10px;
+    position: relative;
+    text-align: center !important;
+}
+
 /* image border radius for avatar */
 .sapFAvatarSquare .sapFAvatarImageHolder {
     border-radius: 2rem;
@@ -12,6 +82,7 @@
 .textBlack {
     color: black !important;
 }
+
 
 .textBold {
     font-weight: bold;
@@ -48,15 +119,58 @@
     color: white !important;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 400px) {
     .navText > span {
         font-size: 1rem;
+    }
+    .countdown {
+        font-size: 2rem;
+        padding: 0.5rem 0.5rem;
+        background: #38414a;
+        font-weight: 300;
+    }
+    
+    .countdownLabel {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+@media (min-width: 401px) {
+    .navText > span {
+        font-size: 1rem;
+    }
+    .countdown {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+        background: #38414a;
+        font-weight: 300;
+    }
+    
+    .countdownLabel {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 
 @media (min-width: 601px) {
     .navText > span {
         font-size: 1.5rem;
+    }
+    .countdown {
+        font-size: 3rem;
+        padding: 0 1rem;
+        background: #38414a;
+        font-weight: 300;
+    }
+    
+    .countdownLabel {
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 .seperator {
@@ -91,7 +205,6 @@
     line-height: 1.6;
 }
 
-
 .DarkBlue {
     background-color: darkslateblue;
     color: white;
@@ -112,19 +225,9 @@
     text-shadow: 0 0px 5px #333;
 }
 
-/*
-.abapconfSubtitle {
-    color: #fff;
-    font-size: 24px;
-
-    color: #CCCCCC;
-    text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
-} 
-*/
 .abapconfSubtitle {
     font-size: 1.5em;
     font-family: sans-serif;
     color: #fff;
     text-shadow: 0 0 5px black;
 } 
-

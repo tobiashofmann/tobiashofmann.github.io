@@ -9,7 +9,7 @@ DTEND;VALUE=DATE:20211209T210000Z
 SUMMARY:ABAPConf 2021
 DESCRIPTION:ABAPConf ist eine virtuelle Online-Konferenz mit Fokus auf die Programmiersprache ABAP. Sie wird dieses Jahr zum ersten Mal stattfinden. Die Organisation erfolgt durch verschiedene Entwickler und Berater aus der SAP Community. Von den Inhalten her werden Vorträge für Einsteiger und Experten, Workshops und Hintergrundgespräche in den Sprachen Deutsch und Englisch angeboten. Die Teilnahme ist kostenlos.
 X-ALT-DESC;FMTTYPE=text/html:<p>ABAPConf ist eine virtuelle Online-Konferenz mit Fokus auf die Programmiersprache ABAP. Sie wird dieses Jahr zum ersten Mal stattfinden. Die Organisation erfolgt durch verschiedene Entwickler und Berater aus der SAP Community. Von den Inhalten her werden Vorträge für Einsteiger und Experten, Workshops und Hintergrundgespräche in den Sprachen Deutsch und Englisch angeboten. Die Teilnahme ist kostenlos.</p>
-LOCATION:online, YoutTube Live and at www.abapconf.org
+LOCATION:online, YouTube Live and at www.abapconf.org
 URL:https://www.abapconf.org/
 END:VEVENT
 END:VCALENDAR

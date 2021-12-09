@@ -23,6 +23,7 @@
                 "time": "9:00",
                 "duration": 20,
                 "language": "German",
+                "ics": "/card/orga/tobias/Channel1Welcome.ics",
                 "tags": [
                     {
                         "name": "Keynote",
@@ -64,6 +65,7 @@
                 "abstract": "Welcome to ABAPConf 2021. Introduction to the conference, motivation and agenda. Get to know the people and how to get the best out of the day.",
                 "track": 1,
                 "time": "9:00",
+                "ics": "/card/orga/tobias/Channel1Welcome.ics",
                 "tags": [
                     {
                         "name": "Keynote",
@@ -105,6 +107,7 @@
                 "abstract": "Welcome to ABAPConf 2021. Introduction to the conference, motivation and agenda. Get to know the people and how to get the best out of the day.",
                 "track": 1,
                 "time": "9:00",
+                "ics": "/card/orga/tobias/Channel1Welcome.ics",
                 "tags": [
                     {
                         "name": "Keynote",
@@ -149,6 +152,7 @@
                 "time": "10:10",
                 "duration": 45,
                 "language": "English",
+                "ics": "/card/speakers/thomas/Channel1ABAPinEclipse.ics",
                 "tags": [
                     {
                         "name": "Cloud",
@@ -195,7 +199,7 @@
         "function": "ABAP-Entwickler",
         "picture": "./card/speakers/michael/Michael.png",
         "shortBio": "Co-Founder and CEO of educatedBytes GmbH, software architect, ABAP developer, SAP Champion, blogger, lecturer, father, husband, son ... always in service",
-        "longBio": "",
+        "longBio": "I’ve been working as an ABAP developer in energy supply logistics for many years, mainly on legacy code. In addition, I teach at a local university of applied sciences, write blogs and articles in and for the SAP community and for heise developer. I’m also the co-founder of educatedBytes GmbH",
         "linkedIn": "https://www.linkedin.com/in/michael-keller-abap-developer/",
         "scn": "https://people.sap.com/keller.m",
         "twitter": "I_heart_ABAP",
@@ -208,6 +212,7 @@
                 "time": "10:10",
                 "duration": 45,
                 "language": "German",
+                "ics": "/card/speakers/michael/Channel2CleanABAP.ics",
                 "tags": [
                     {
                         "name": "Best practice",
@@ -259,6 +264,7 @@
                 "time": "11:00",
                 "duration": 30,
                 "language": "German",
+                "ics": "/card/speakers/jbrandeis/Channel1BestOfADT.ics",
                 "tags": [
                     {
                         "name": "Best practice",
@@ -288,8 +294,8 @@
         "companyWeb": "https://tricktresor.de",
         "function": "Chefkoch",
         "picture": "./card/speakers/enno/Enno.png",
-        "shortBio": "",
-        "longBio": "",
+        "shortBio": "ABAP-Entwickler aus Leidenschaft",
+        "longBio": "ABAP-Entwickler aus Leidenschaft seit 1995 und R/3 Release 2.1i. Erfinder von Tricktresor.de. Seit 15 Jahren Berater und Entwickler bei Inwerken. Oberlehrer und Besserwisser. Will nicht wahrhaben, dass SAPGUI-Controls bald der Vergangenheit angehören. Clean-Code und Code-Dojo-Fanboy.",
         "linkedIn": "",
         "scn": "https://people.sap.com/enno.wulff",
         "twitter": "ennowulff",
@@ -299,9 +305,10 @@
                 "title": "Code-Dojo",
                 "abstract": "Erfahrungsbericht mit ABAP Code-Dojos bei Inwerken. Mit Tipps und weiterführenden Infos (remote mob programming, ABAP Besonderheiten, Aufgaben und Themengebiete)",
                 "track": 2,
-                "time": "11:00",
-                "duration": 30,
+                "time": "16:35",
+                "duration": 45,
                 "language": "German",
+                "ics": "/card/speakers/enno/Channel1CodeDojo.ics",
                 "tags": [
                     {
                         "name": "Best practice",
@@ -320,7 +327,11 @@
         ],
         "tags": [
             {
-                "name": "Agile",
+                "name": "ABAP",
+                "color": 4
+             },
+             {
+                "name": "Clean ABAP",
                 "color": 3
              }
         ]
@@ -346,9 +357,10 @@
                 "title": "Code-Dojo",
                 "abstract": "Erfahrungsbericht mit ABAP Code-Dojos bei Inwerken. Mit Tipps und weiterführenden Infos (remote mob programming, ABAP Besonderheiten, Aufgaben und Themengebiete)",
                 "track": 2,
-                "time": "11:00",
-                "duration": 30,
+                "time": "16:35",
+                "duration": 45,
                 "language": "German",
+                "ics": "/card/speakers/enno/Channel1CodeDojo.ics",
                 "tags": [
                     {
                         "name": "Best practice",
@@ -396,6 +408,7 @@
                 "time": "11:35",
                 "duration": 30,
                 "language": "English",
+                "ics": "/card/speakers/lukasz/ChannelADTPlugins.ics",
                 "tags": [
                     {
                         "name": "Classic ABAP",
@@ -429,9 +442,9 @@
         "companyWeb": "https://www.neo-suite.de/ueber-uns/",
         "function": "Senior Software Architect",
         "picture": "./card/speakers/wolfgang/Wolfgang.jpg",
-        "shortBio": "",
-        "longBio": "",
-        "linkedIn": "https://www.xing.com/profile/Wolfgang_Roeckelein",
+        "shortBio": "Professionally developing software since the age of 16, Wolfgang is now a software architect and full stack developer in the SAP ecosystem for over 15 years.",
+        "longBio": "I hold a PhD in business informatics and are applying the theory to professional software development since the age of 16. I have been working in the SAP ecosystem now for over 15 years as a software architect and full stack developer (eg from ABAP to JS) at SAP Partner companies developing solutions for mobile computing and workforce management. I am engaged at the DSAG and occasionally write blogs and books. I am a bicyclist owning no car and enjoy hiking in the alps.",
+        "linkedIn": "https://www.linkedin.com/in/dr-wolfgang-r%C3%B6ckelein-681570151/",
         "scn": "https://people.sap.com/wroeckelein.fum",
         "twitter": "",
         "sessions": [
@@ -443,6 +456,7 @@
                 "time": "11:35",
                 "duration": 45,
                 "language": "German",
+                "ics": "/card/speakers/wolfgang/Channel2AgileABAP.ics",
                 "tags": [
                     {
                         "name": "Best practice",
@@ -463,6 +477,14 @@
             {
                 "name": "Agile",
                 "color": 3
+             },
+             {
+                "name": "ABAP",
+                "color": 4
+             },
+             {
+                "name": "Clean ABAP",
+                "color": 3
              }
         ]
     },
@@ -476,8 +498,8 @@
         "companyWeb": "https://www.sap.com",
         "function": "Development Expert",
         "picture": "./card/speakers/marcos/Marcos.jpg",
-        "shortBio": "",
-        "longBio": "",
+        "shortBio": "Member of the ABAP Language Group",
+        "longBio": "Member of the ABAP Language Group. His responsibilities include the ABAP compiler / runtime (mostly functional operations and table expressions) and the BAdI infrastructure",
         "linkedIn": "https://www.linkedin.com/in/marcosdelpuerto/",
         "scn": "https://people.sap.com/marcos.delpuertogarcia",
         "twitter": "",
@@ -490,6 +512,7 @@
                 "time": "13:10",
                 "duration": 45,
                 "language": "German",
+                "ics": "/card/speakers/marcos/Channel1ConstructorOperators.ics",
                 "tags": [
                     {
                         "name": "Deep-dive",
@@ -518,9 +541,9 @@
         "company": "rku.it GmbH",
         "companyWeb": "https://rku-it.de/",
         "function": "SAP-Anwendungsentwickler",
-        "picture": "",
-        "shortBio": "",
-        "longBio": "",
+        "picture": "./card/speakers/christopher/Graw.png",
+        "shortBio": "ABAP is cool!",
+        "longBio": "„I have been working as a Consultant and Developer in the Utilities Industry since 2015. For one and a half years I am now a member of DevGarage at rku.it. Our slogan is „ABAP is cool!“ and following this maxim we strive to continuously improve our ABAP knowledge and skills  and provide value for our customers, our colleagues and ourselves in our everyday working life.",
         "linkedIn": "",
         "scn": "",
         "twitter": "",
@@ -533,6 +556,7 @@
                 "time": "13:10",
                 "duration": 45,
                 "language": "German",
+                "ics": "/card/speakers/christopher/Channel2CDSViewALV.ics",
                 "tags": [
                     {
                         "name": "Deep-dive",
@@ -580,6 +604,7 @@
                 "time": "14:00",
                 "duration": 30,
                 "language": "English",
+                "ics": "/card/speakers/bogdan/Channel1ExceptionClass.ics",
                 "tags": [                    
                     {
                         "name": "Classic ABAP",
@@ -619,6 +644,7 @@
                 "time": "14:35",
                 "duration": 45,
                 "language": "English",
+                "ics": "/card/speakers/gopal/Channel1CommonCodePoint.ics",
                 "tags": [
                     {
                         "name": "Deep-Dive",
@@ -674,6 +700,7 @@
                 "time": "14:35",
                 "duration": 45,
                 "language": "German",
+                "ics": "/card/speakers/uwe/Channel2Events.ics",
                 "tags": [
                     {
                         "name": "On premise",
@@ -710,9 +737,9 @@
         "company": "Marc Bernard Tools",
         "companyWeb": "https://marcbernardtools.com",
         "function": "Founder and CEO of Marc Bernard Tools",
-        "picture": "./card/speakers/marc/Marc.jpg",
-        "shortBio": "Founder and CEO of Marc Bernard Tools, #IndieHacker #DigitalNomad",
-        "longBio": "Marc Bernard is a Sr. Chief Architect in Product Management for SAP HANA with a focus on in-memory computing technology, enterprise data warehousing, and business intelligence. He has been with SAP since 1997 and has more than seventeen years of experience in functions for SAP Business Warehouse (BW) specializing in system architecture, business planning applications, and security. Since 2010, Marc has been engaged in the launch of SAP HANA, the game-changing, real-time platform for analytics and applications, and with his experience Marc is one of SAP's most valuable assets for these solutions. Marc is now playing a major part in the rollout of SAP BW/4HANA, the next generation data warehouse solution from SAP.",
+        "picture": "./card/speakers/marc/Marc.png",
+        "shortBio": "Solopreneur, Indie Coder, Digital Nomad. Loves BW and abapGit.",
+        "longBio": "Marc is the founder of Marc Bernard Tools, an innovative and highly specialized start-up company on a mission to build the world’s best open source tools for SAP Basis, SAP Business Warehouse, and SAP BW/4HANA customers, partners, and developers",
         "linkedIn": "https://www.linkedin.com/in/marcfbernard/",
         "scn": "https://people.sap.com/marcbernardtools",
         "twitter": "marcfbe",
@@ -725,6 +752,7 @@
                 "time": "16:00",
                 "duration": 30,
                 "language": "English",
+                "ics": "/card/speakers/marc/Channel1ABAPGit.ics",
                 "tags": [
                     {
                         "name": "On premise",
@@ -772,6 +800,7 @@
                 "time": "16:00",
                 "duration": 30,
                 "language": "English",
+                "ics": "/card/speakers/lars/Channel2ABAP.ics",
                 "tags": [                    
                     {
                         "name": "Classic ABAP",
@@ -824,9 +853,10 @@
                 "title": "'Kannst du bitte eine Änderung in Zeile 7.656 machen?' - Legacy Code angstfrei mit der Golden Master Technik ändern",
                 "abstract": "Als Entwickler*in verbringst du wahrscheinlich einen Großteil deiner Zeit mit der Erweiterung, Optimierung oder Fehlerbehebung von bestehendem Code, der nicht durch Unit-Tests abgedeckt ist ('Legacy-Code'). Bei jeder Änderung besteht die Möglichkeit, dass neue Fehler eingebaut werden, die weder du noch die Tester*innen bemerken werden. Manchmal sind Reports sogar viel zu komplex, um sie zu testen, oder niemand weiß wirklich, welche 'magischen Dinge' wirklich passieren. Wäre es nicht toll, wenn du das Risiko der Einführung von Fehlern und unerwarteten Nebeneffekten verringern könntest? Würdest du gerne in der Lage sein, Legacy-Code sicher zu ändern, auch wenn der Code nicht durch Unit-Tests abgedeckt ist? Die 'Golden Master Testing'-Technik hilft dir dabei. Sie ist sicherlich kein Allheilmittel, aber sie kann dir das Leben erleichtern und ermöglicht es dir, den Code sicher zu refaktorisieren, um ihn auch schrittweise mit Unit-Tests testbar zu machen. Dieser Vortrag gibt Ihnen einen Überblick über den allgemeinen Ansatz, häufige Probleme und mögliche Lösungen.",
                 "track": 1,
-                "time": "16:35",
+                "time": "11:00",
                 "duration": 30,
                 "language": "German",
+                "ics": "/card/speakers/dominik/Channel2LegacyCode.ics",
                 "tags": [
                     {
                         "name": "Best Practice",
@@ -884,8 +914,9 @@
                 "abstract": "When trying to extend complex SAP Fiori applications in SAP S/4HANA one might face issues that the underlying OData service cannot be extended with SEGW using redefinition.  In this talk I will show a workaround that I call 'manual redefinition' which which is purely code based and encompasses only a few lines of code in the MPC_EXT and DPC_EXT class.",
                 "track": 2,
                 "time": "16:35",
-                "duration": 30,
+                "duration": 45,
                 "language": "English",
+                "ics": "/card/speakers/andre/Channel2Extending.ics",
                 "tags": [
                     {
                         "name": "On premise",
@@ -941,6 +972,7 @@
                 "time": "13:10",
                 "duration": 120,
                 "language": "German",
+                "ics": "/card/speakers/christian/Channel3.ics", 
                 "tags": [
                     {
                         "name": "Best Practice",
@@ -969,10 +1001,10 @@
         "company": "CloudDNA GmbH",
         "companyWeb": "https://www.clouddna.at",
         "function": "SAP Consultant",
-        "picture": "",
-        "shortBio": "",
-        "longBio": "",
-        "linkedIn": "",
+        "picture": "./card/speakers/martin/martin.jpg",
+        "shortBio": "Cloud and Security Architect",
+        "longBio": "Founder of CloudDNA. Always curious about new technology trends. Cloud and Security Architect. SAPUI5 / Fiori Developer of the first hour. SAP Press author.",
+        "linkedIn": "https://www.linkedin.com/in/martin-koch-981b272/",
         "scn": "",
         "twitter": "",
         "sessions": [
@@ -984,6 +1016,7 @@
                 "time": "14:00",
                 "duration": 30,
                 "language": "German",
+                "ics": "/card/speakers/martin/Channel2CDSTipps.ics",
                 "tags": [
                     {
                         "name": "Best Practice",
@@ -1035,6 +1068,7 @@
                 "time": "13:10",
                 "duration": 120,
                 "language": "German",
+                "ics": "/card/speakers/damir/Channel3.ics",
                 "tags": [
                     {
                         "name": "Best Practice",
@@ -1053,6 +1087,125 @@
                 "color": 4
              }
         ]
+    },
+    {
+        "id": "39a33820-ddc5-4f99-8422-016622ebb788",
+        "firstname": "Boris",
+        "middlename": "",
+        "lastname": "Gebhardt",
+        "initials": "BG",
+        "company": "SAP SE",
+        "companyWeb": "https://www.sap.com",
+        "function": "Chief Product Owner ABAP Platform",
+        "picture": "./card/speakers/boris/Boris.jpg",
+        "shortBio": "Chief Product Owner of the ABAP Platform",
+        "longBio": "Boris Gebhardt is the Chief Product Owner of the ABAP Platform at SAP SE and focuses on the strategy and the innovations of the ABAP Platform. This includes the ABAP programming language, ABAP development tools, the ABAP application server and technical ABAP reuse services. During the last 20 years at SAP, Boris Gebhardt has held several positions in support, development, and management with a special focus on ABAP development and troubleshooting tools.",
+        "linkedIn": "",
+        "scn": "",
+        "twitter": "",
+        "sessions": [
+            {
+                "id":21,
+                "title": "Channel 1 Keynote: ABAP Platform Strategy and Roadmap",
+                "abstract": "ABAP Extensibility strategy focuses on the different extensibility options that customers and partners are looking for: side-by-side extensibility with SAP BTP for the ABAP environment, in-application extensibility, and on-stack extensibility with the SAP S/4HANA Cloud, ABAP environment. We also explain the road map for a unified codeline approach for all ABAP deployments.",
+                "track": 1,
+                "time": "9:10",
+                "duration": 55,
+                "language": "English",
+                "ics": "/card/speakers/boris/Channel1Keynote.ics",
+                "tags": [
+                    {
+                        "name": "Keynote",
+                        "color": 1
+                    },
+                    {
+                        "name": "Cloud",
+                        "color": 2
+                    },
+                    {
+                        "name": "On premise",
+                        "color": 3
+                    },
+                    {
+                        "name": "Classic ABAP",
+                        "color": 4
+                    },
+                    {
+                        "name": "Best practice",
+                        "color": 5
+                    },
+                    {
+                        "name": "S/4HANA",
+                        "color": 6
+                    }       
+                ]
+            }
+        ],
+        "tags": [
+            {
+                "name": "ABAP",
+                "color": 4
+             }
+        ]
+    },
+    {
+        "id": "39a33820-ddc5-4f99-8422-016622ebb789",
+        "firstname": "Frank",
+        "middlename": "",
+        "lastname": "Jentsch",
+        "initials": "FJ",
+        "company": "SAP SE",
+        "companyWeb": "https://www.sap.com",
+        "function": "Chief Development Architect",
+        "picture": "./card/speakers/frank/Frank.jpg", 
+        "shortBio": "Frank has 20 years experiences in ABAP-related development of applications and technology components. Today, he is leading the project for SAP BTP ABAP Environment",
+        "longBio": "Frank has 20 years experiences in ABAP-related development of applications and technology components. Today, he is leading the project for SAP BTP ABAP Environment.",
+        "linkedIn": "https://www.linkedin.com/in/frank-jentsch/",
+        "scn": "",
+        "twitter": "",
+        "sessions": [
+            {
+                "id":21,
+                "title": "Channel 1 Keynote: ABAP Platform Strategy and Roadmap",
+                "abstract": "ABAP Extensibility strategy focuses on the different extensibility options that customers and partners are looking for: side-by-side extensibility with SAP BTP for the ABAP environment, in-application extensibility, and on-stack extensibility with the SAP S/4HANA Cloud, ABAP environment. We also explain the road map for a unified codeline approach for all ABAP deployments.",
+                "track": 1,
+                "time": "9:10",
+                "duration": 55,
+                "language": "English",
+                "ics": "/card/speakers/frank/Channel1Keynote.ics",
+                "tags": [
+                    {
+                        "name": "Keynote",
+                        "color": 1
+                    },
+                    {
+                        "name": "Cloud",
+                        "color": 2
+                    },
+                    {
+                        "name": "On premise",
+                        "color": 3
+                    },
+                    {
+                        "name": "Classic ABAP",
+                        "color": 4
+                    },
+                    {
+                        "name": "Best practice",
+                        "color": 5
+                    },
+                    {
+                        "name": "S/4HANA",
+                        "color": 6
+                    }       
+                ]
+            }
+        ],
+        "tags": [
+            {
+                "name": "ABAP",
+                "color": 4
+             }
+        ]
     }
-
 ]

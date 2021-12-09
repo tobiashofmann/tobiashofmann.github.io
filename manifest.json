@@ -142,6 +142,16 @@
           "target": ["Agenda"]
         },
         {
+          "name": "Channel1",
+          "pattern": "agenda/channel1",
+          "target": ["Channel1"]
+        },
+        {
+          "name": "Channel2",
+          "pattern": "agenda/channel2",
+          "target": ["Channel2"]
+        },
+        {
           "name": "History",
           "pattern": "history",
           "target": ["History"]
@@ -175,8 +185,7 @@
           "name": "Impressum",
           "pattern": "impressum",
           "target": ["Impressum"]
-        }
-        ,
+        },
         {
           "name": "Datenschutz",
           "pattern": "datenschutz",
@@ -204,6 +213,20 @@
           "clearControlAggregation": false,
           "viewId": "Agenda",
           "viewName": "agenda/Agenda"
+        },
+        "Channel1": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Channel1",
+          "viewName": "agenda/channel1/Channel1"
+        },
+        "Channel2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Channel2",
+          "viewName": "agenda/channel2/Channel2"
         },
         "Speakers": {
           "viewType": "XML",

@@ -1,59 +1,114 @@
-[{
-  "date": "2021/02/01",
-  "title": "Hibernation",
-  "text": "For the next months, until July, the project went undercover.",
-  "links": []
-},
-{
-  "date": "2021/08/01",
-  "title": "Website",
-  "text": "Creation of website and coding",
-  "links": [{
-    "title": "ABAPConf website",
-    "href": "https://www.abapconf.org",
-    "target": "_blank"
-  }]
-},
-{
-  "date": "2021/09/24",
-  "title": "First announcement",
-  "text": "The first public appearance of ABAPConf 2021 was during a Webinar about RAP from Cadaxo. The webiste went live.",
-  "links": [{
-    "title": "RAP Webinar",
-    "href": "http://www.cadaxo.com/high-class-development/webinar-abap-rap-3/",
-    "target": "_blank"
-  }]
-},
-{
-  "date": "2021/09/29",
-  "title": "Call for Speakers",
-  "text": "Call for speaker opened.",
-  "links": [{
-      "title": "ABAPConf Call for Speakers",
-      "href": "https://www.abapconf.org/#/cfs",
+[
+  {
+    "date": "2021/02/01",
+    "title": "Hibernation",
+    "text": "For the next months, until July, the project went undercover.",
+    "links": []
+  },
+  {
+    "date": "2021/08/01",
+    "title": "Website",
+    "text": "Creation of website and coding",
+    "links": [{
+      "title": "ABAPConf website",
+      "href": "https://www.abapconf.org",
       "target": "_blank"
-    },
-    {
-      "title": "ABAPConf Call for Speakers form",
-      "href": "https://docs.google.com/forms/d/17v7B0hmD224WQnwynQrknZX6moT1lLtyoWVjYY_Qz3E/edit",
+    }]
+  },
+  {
+    "date": "2021/09/24",
+    "title": "First announcement",
+    "text": "The first public appearance of ABAPConf 2021 was during a Webinar about RAP from Cadaxo. The webiste went live.",
+    "links": [{
+      "title": "RAP Webinar",
+      "href": "http://www.cadaxo.com/high-class-development/webinar-abap-rap-3/",
       "target": "_blank"
-    }
-  ]
-},
-{
-  "date": "2021/10/09",
-  "title": "In the news",
-  "text": "Heise Developers reported about ABAPConf in a news article",
-  "links": [{
-    "title": "Programmieren mit ABAP: Kostenlose Onlineveranstaltung ABAPConf im Dezember",
-    "href": "https://www.heise.de/news/Programmieren-mit-ABAP-Kostenlose-Onlineveranstaltung-ABAPConf-im-Dezember-6212855.html",
-    "target": "_blank"
-  }]
-},
-{
-  "date": "2021/10/29",
-  "title": "Call for Speakers ended",
-  "text": "Call for speakers ended",
-  "links": []
-}
+    }]
+  },
+  {
+    "date": "2021/09/29",
+    "title": "Call for Speakers",
+    "text": "Call for speaker opened.",
+    "links": [{
+        "title": "ABAPConf Call for Speakers",
+        "href": "https://www.abapconf.org/#/cfs",
+        "target": "_blank"
+      },
+      {
+        "title": "ABAPConf Call for Speakers form",
+        "href": "https://docs.google.com/forms/d/17v7B0hmD224WQnwynQrknZX6moT1lLtyoWVjYY_Qz3E/edit",
+        "target": "_blank"
+      }
+    ]
+  },
+  {
+    "date": "2021/10/09",
+    "title": "In the news",
+    "text": "Heise Developers reported about ABAPConf in a news article",
+    "links": [{
+      "title": "Programmieren mit ABAP: Kostenlose Onlineveranstaltung ABAPConf im Dezember",
+      "href": "https://www.heise.de/news/Programmieren-mit-ABAP-Kostenlose-Onlineveranstaltung-ABAPConf-im-Dezember-6212855.html",
+      "target": "_blank"
+    }]
+  },
+  {
+    "date": "2021/10/29",
+    "title": "Call for Speakers ended",
+    "text": "Call for speakers ended",
+    "links": []
+  },
+  {
+    "date": "2021/11/08",
+    "title": "Agenda published",
+    "text": "39 submissions, all of a very high quality. It was tough, it was hard, but the programm comittee did it and built an agenda with 3 channels, 2 languages and over 20 sessions in total.",
+    "links": [{
+      "title": "ABAPConf Agenda",
+      "href": "https://www.abapconf.org/#/agenda",
+      "target": "_blank"
+    }]
+  },
+  {
+    "date": "2021/11/09",
+    "title": "Keynote confirmed",
+    "text": "The keynote with the SAP execs that define ABAP and its future is confirmed. We are super happy to have Boris and Frank as keynote speakers.",
+    "links": [{
+      "title": "Boris Gebhardt",
+      "href": "https://www.abapconf.org/#/speakers/detail/39a33820-ddc5-4f99-8422-016622ebb788",
+      "target": "_blank"
+    },{
+      "title": "Frank Jentsch",
+      "href": "https://www.abapconf.org/#/speakers/detail/39a33820-ddc5-4f99-8422-016622ebb789",
+      "target": "_blank"
+    }]
+  },
+  {
+    "date": "2021/11/21",
+    "title": "Milestone: 1.000 registrations",
+    "text": "We reached a milestone: over 1.000 ABAP developers registered for the event at eventbrite. This number is even more impressive, considering that registartion is optional! Thank you to every one that registered for ABAPConf! You are the ABAP dev community, you are the reson this event exists!",
+    "links": [{
+      "title": "Twitter",
+      "href": "https://twitter.com/AbapConf/status/1462411919604830222",
+      "target": "_blank"
+    }]
+  },
+  {
+    "date": "2021/11/24",
+    "title": "Workshop ABAP 102",
+    "text": "The ABAP 102 Workshop opened for registration. The workshop is planned by Christian and Damir and they can host up to 50 people. In less than 40 minutes, the 50 spots were taken and people had to be put on the waitlist. We are sorry for this, yet also happy as it shows that the workshop matches demand.",
+    "links": [{
+      "title": "ABAP 102 Workshop",
+      "href": "https://www.eventbrite.com/e/abapconf-2021-workshop-abap-102-registration-216803594387",
+      "target": "_blank"
+    }]
+  },
+  {
+    "date": "2021/11/25",
+    "title": "Milestone: 1.200 registrations",
+    "text": "We reached a milestone: over 1.200 ABAP developers registered for the event at eventbrite. This number is even more impressive, considering that registartion is optional! Thank you to every one that registered for ABAPConf! You are the ABAP dev community, you are the reson this event exists!",
+    "links": [{
+      "title": "Twitter",
+      "href": "https://twitter.com/AbapConf/status/1463867104843776009",
+      "target": "_blank"
+    }]
+  }
 ]

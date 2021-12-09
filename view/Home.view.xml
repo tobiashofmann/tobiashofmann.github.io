@@ -38,6 +38,44 @@
                 <!-- Subtitle -->
                 <l:Grid
                     containerQuery="false"
+                    defaultSpan="XL4 L4 M12 S12"
+                    hSpacing="1">
+                    <html:div class="exampleDiv"/>
+                    <VBox height="auto" alignItems="Center" justifyContent="Center">
+                        <Link width="auto" text="{i18n>linkChannel1}" href="#/agenda/channel1" textAlign="Center"  class="sapUiSmallMarginTopBottom channelLink textReadability"/>
+                        <Link width="auto" text="{i18n>linkChannel2}" href="#/agenda/channel2" textAlign="Left"  class="sapUiSmallMarginTopBottom channelLink textReadability"/>
+                        <HBox width="100%" alignItems="Start" justifyContent="SpaceBetween">
+                            <Label class="abapconfSubtitle" text="Where: " />
+                            <Text class="abapconfSubtitle" text="YouTube" />
+                        </HBox>
+                        <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
+                            <Label class="abapconfSubtitle" text="Interact: " />
+                            <Text class="abapconfSubtitle" text="YouTube chat/Twitter " />
+                        </HBox>
+                        <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
+                            <Label class="abapconfSubtitle textReadability" text="Hashtag: " />
+                            <Text class="abapconfSubtitle" text="#ABAPConf" />
+                        </HBox>
+                        <HBox width="100%" alignItems="Center" justifyContent="SpaceBetween">
+                            <Label class="abapconfSubtitle" text="Links: " />
+                            <VBox >
+                            <Link width="100%" class="sapUiSmallMarginTopBottom channelLinkHome textReadability" text="YouTube ABAPConf" href="https://www.youtube.com/channel/UC-nW3KEd85b6mOqNRziZ9tA" />
+                            <Link width="100%" class="sapUiSmallMarginTopBottom channelLinkHome textReadability" text="Livestream Channel 1" href="https://youtu.be/GqsfIb1RnaU" />
+                            <Link width="100%" class="sapUiSmallMarginTopBottom channelLinkHome textReadability" text="Livestream Channel 2" href="https://youtu.be/oiioWw9U5fk" />
+                            <Link width="100%" class="sapUiSmallMarginTopBottom channelLinkHome textReadability" text="Twitter" href="https://twitter.com/AbapConf" />
+                            </VBox>
+                        </HBox>
+                        <layoutData>
+                            <l:GridData span="XL4 L4 M12 S12"/>
+                        </layoutData>
+                    </VBox>
+                    <html:div class="exampleDiv"/>
+                </l:Grid>
+
+                <!-- Subtitle -->
+                <!--
+                <l:Grid
+                    containerQuery="false"
                     defaultSpan="XL2 L2 M12 S12"
                     hSpacing="1">
                     <html:div class="exampleDiv"/>
@@ -49,7 +87,7 @@
                     </HBox>
                     <html:div class="exampleDiv"/>
                 </l:Grid>
-
+                -->
                 
                 <!-- Intro Video -->
                 <!--
@@ -59,7 +97,7 @@
                     hSpacing="1">
                     <html:div class="exampleDiv"/>
                     <yt:YTVideo
-                        source="https://www.youtube.com/embed/y1167Yme07o"
+                        source="https://www.youtube.com/embed/NDajAvfiQHs"
                         width="{= ${device>/system/phone} === true ? '360px' : '600px' }" 
                         height="{= ${device>/system/phone} === true ? '202px' : '337px' }"
                         frameborder="0" 
@@ -69,6 +107,7 @@
                 -->
 
                 <!-- Intro Text -->
+                <!--
                 <l:Grid
                     containerQuery="false"
                     defaultSpan="XL4 L3 M12 S12"
@@ -82,8 +121,9 @@
                     </HBox>
                     <html:div class="exampleDiv"/>
                 </l:Grid>
-
+                -->
                 <!-- Short explaination text -->
+                <!--
                 <l:Grid
                     containerQuery="false"
                     defaultSpan="XL4 L3 M12 S12"
@@ -97,7 +137,7 @@
                     </HBox>
                     <html:div class="exampleDiv"/>
                 </l:Grid>
-
+                -->
             </VBox>
 
 
