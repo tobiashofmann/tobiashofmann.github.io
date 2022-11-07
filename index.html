@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>SAP Business Application Studio Status</title>
+    <style>
+      body {
+        font-family: segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+          helvetica neue, Verdana, sans-serif;
+      }
+      h1 {
+        margin-top: 30px;
+      }
+      ul {
+        padding: 0px;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 2px;
+        padding: 5px;
+        border-bottom: 1px solid #ddd;
+      }
+      .container {
+        max-width: 600px;
+        width: 100%;
+        margin: 15px auto;
+      }
+      .panel {
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        border-radius: 5px;
+      }
+      .failed-bg {
+        color: white;
+        background-color: #e25d6a;
+      }
+      .success-bg {
+        color: white;
+        background-color: #52b86a;
+      }
+      .failed {
+        color: #e25d6a;
+      }
+      .success {
+        color: #52b86a;
+      }
+      .small {
+        font-size: 80%;
+      }
+      .status {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SAP Business Application Studio status</h1>
+      <ul>
+        <li class="panel success-bg">What is the status of SAP BAS, considering the big SAP TechEd 2022 announcement?</li>
+      </ul>
+      <h1>SAP Business Application Studio is</h1>
+      <ul>
+        <li>Rebranded <span class="status failed">No</span></li>
+        <li>EOL <span class="status failed">No</span></li>
+        <li>All plugins available for VS Code <span class="status failed">No</span></li>
+        <li>All plugins are open source <span class="status failed">No</span></li>
+        <li>ADT for BAS <span class="status failed">No</span></li>
+        <li>ADT for VS Code <span class="status failed">No</span></li>
+        <li>Still regarded as inferior by SAP devs <span class="status success">Yes</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
