@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Meet the speakers\n- Andrea Schlotthauer\n- Marc Bernard\n
+DTSTART:20221207T165500Z
+DTEND:20221207T171000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel2
+SUMMARY;LANGUAGE=en-us:Meet the speakers
+END:VEVENT
+END:VCALENDAR

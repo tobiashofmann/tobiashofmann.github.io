@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Clean Core Strategy for WRICEF developments\nThis session talks about building WRICEF objects by following clean core fundamentals\n
+DTSTART:20221207T134500Z
+DTEND:20221207T143000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel1
+SUMMARY;LANGUAGE=en-us:Clean Core Strategy for WRICEF developments
+END:VEVENT
+END:VCALENDAR

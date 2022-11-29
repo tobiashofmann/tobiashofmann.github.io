@@ -1,0 +1,44 @@
+{
+	"_version": "1.15.0",
+	"sap.app": {
+		"id": "abapconf.web.abapconf.card.speakers.thomas",
+		"type": "card",
+		"title": "Featured Speaker",
+		"subTitle": "Thomas Fiedler",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "Thomas Fiedler",
+		"info": "Thomas Fiedler",
+		"description": "Thomas Fiedler",
+		"tags": {
+			"keywords": [
+				"Component",
+				"Card",
+				"Speaker"
+			]
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "abapconf.web.abapconf.card.speakers.thomas.View",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.38",
+			"libs": {
+				"sap.m": {}
+			}
+		}
+	},
+	"sap.card": {
+		"type": "Component",
+		"headerPosition": "Top",
+		"header": {
+			"title": "Thomas Fiedler",
+			"subTitle": "SAP"
+		}
+	}
+}

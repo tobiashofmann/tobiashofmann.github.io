@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Welcome\nWelcome to ABAPConf 2022. Introduction to the conference\, motivation and agenda. Get to know the people and how to get the best out of the day.\n
+DTSTART:20221207T074500Z
+DTEND:20221207T080000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel1
+SUMMARY;LANGUAGE=en-us:Welcome
+END:VEVENT
+END:VCALENDAR

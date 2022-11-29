@@ -1,0 +1,316 @@
+{
+  "_version": "1.32.0",
+  "start_url": "https://www.abapconf.org",
+  "sap.app": {
+    "id": "abapconf.2022.org",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "subTitle": "{{appSubTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "ach": "ach",
+    "tags": {
+      "keywords": ["{{abapconftags}}", "{{appDescription}}"]
+    },
+    "dataSources": {
+      "speakers":{
+        "uri": "model/speakers.json",
+        "type": "JSON"
+      },
+      "agenda":{
+        "uri": "model/agenda.json",
+        "type": "JSON"
+      }
+    },
+    "offline": false
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "fullWidth": true,
+    "icons": {
+      "icon": "sap-icon://task",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+
+  "sap.ui5": {
+    "flexEnabled": false,
+    "rootView": {
+      "viewName": "abapconf.2022.org.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },    
+    "dependencies": {
+      "minUI5Version": "1.105.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "abapconf.2022.org.i18n.i18n",
+          "supportedLocales": ["de", "en"],
+          "fallbackLocale": "en"
+        }
+      },
+      "speakers": {
+        "dataSource": "speakers"
+      },
+      "agenda": {
+        "dataSource": "agenda"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "resourceRoots": {
+			"de.itsfullofstars.yt": "./libs/de/itsfullofstars/yt",
+      "de.itsfullofstars.timeline": "./libs/de/itsfullofstars/timeline"
+		},
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "abapconf.2022.org.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "Home",
+          "pattern": "",
+          "target": ["Home"]
+        },
+        {
+          "name": "About",
+          "pattern": "about",
+          "target": ["About"]
+        },
+        {
+          "name": "Speakers",
+          "pattern": "speakers",
+          "target": ["Speakers"]
+        },
+        {
+          "name": "SpeakerDetail",
+          "pattern": "speakers/detail/{id}",
+          "target": ["SpeakerDetail"]
+        },
+        {
+          "name": "OrgaTeam",
+          "pattern": "orga",
+          "target": ["OrgaTeam"]
+        },
+        {
+          "name": "Agenda",
+          "pattern": "agenda",
+          "target": ["Agenda"]
+        },
+        {
+          "name": "History",
+          "pattern": "history",
+          "target": ["History"]
+        },
+        {
+          "name": "Coc",
+          "pattern": "coc",
+          "target": ["Coc"]
+        },
+        {
+          "name": "Faq",
+          "pattern": "faq",
+          "target": ["FAQ"]
+        },
+        {
+          "name": "Committee",
+          "pattern": "committee",
+          "target": ["Committee"]
+        },
+        {
+          "name": "Manifesto",
+          "pattern": "manifesto",
+          "target": ["Manifesto"]
+        },
+        {
+          "name": "CfS",
+          "pattern": "cfs",
+          "target": ["CfS"]
+        },
+        {
+          "name": "Impressum",
+          "pattern": "impressum",
+          "target": ["Impressum"]
+        },
+        {
+          "name": "Datenschutz",
+          "pattern": "datenschutz",
+          "target": ["Datenschutz"]
+        },
+        {
+          "name": "Channel1",
+          "pattern": "agenda/channel1",
+          "target": ["Channel1"]
+        },
+        {
+          "name": "Channel2",
+          "pattern": "agenda/channel2",
+          "target": ["Channel2"]
+        },
+        {
+          "name": "Channel3",
+          "pattern": "agenda/channel3",
+          "target": ["Channel3"]
+        }
+      ],
+      "targets": {
+        "Home": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Home",
+          "viewName": "Home"
+        },
+        "About": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "About",
+          "viewName": "About"
+        },
+        "Agenda": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Agenda",
+          "viewName": "agenda/Agenda"
+        },
+        "Channel1": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Channel1",
+          "viewName": "agenda/channel1/Channel1"
+        },
+        "Channel2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Channel2",
+          "viewName": "agenda/channel2/Channel2"
+        },
+        "Channel3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Channel3",
+          "viewName": "agenda/channel3/Channel3"
+        },
+        "Speakers": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Speakers",
+          "viewName": "speakers/Speakers"
+        },
+        "SpeakerDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "SpeakerDetail",
+          "viewName": "speakers/speakerDetail/SpeakerDetail"
+        },
+        "OrgaTeam": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "OrgaTeam",
+          "viewName": "orga/OrgaTeam"
+        },
+        "History": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "History",
+          "viewName": "info/History"
+        },   
+        "Coc": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Coc",
+          "viewName": "info/Coc"
+        },
+        "FAQ": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Faq",
+          "viewName": "info/FAQ"
+        },
+        "Committee": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Committee",
+          "viewName": "info/Committee"
+        },
+        "Manifesto": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Manifesto",
+          "viewName": "info/Manifesto"
+        },
+        "CfS": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "CfS",
+          "viewName": "info/CfS"
+        },
+        "Impressum": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Impressum",
+          "viewName": "info/Impressum"
+        },
+        "Datenschutz": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Datenschutz",
+          "viewName": "info/Datenschutz"
+        }
+      }
+    }
+  }
+}

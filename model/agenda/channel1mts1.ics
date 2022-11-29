@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Meet the speakers\n- Lawrence Cabac\n- Albert Mink\n- Lars Hvam\n- George Manousaridis\n
+DTSTART:20221207T143500Z
+DTEND:20221207T145000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel1
+SUMMARY;LANGUAGE=en-us:Meet the speakers
+END:VEVENT
+END:VCALENDAR

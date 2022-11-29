@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Writing Custom applications using RAP\nI'd like to share my experience during creation Fiori application using Fiori Elements and RAP on the back-end during S4HANA implementation project.\n\n
+DTSTART:20221207T160500Z
+DTEND:20221207T163500Z
+LOCATION:https://www.abapconf.org/#/agenda/channel1
+SUMMARY;LANGUAGE=en-us:Writing Custom applications using RAP
+END:VEVENT
+END:VCALENDAR

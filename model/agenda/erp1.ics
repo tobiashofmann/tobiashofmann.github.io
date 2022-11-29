@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:ABAP und Zeit\nZeit ist für Menschen von großer Bedeutung. Entsprechend spielt sie in der IT und damit auch in ABAP eine wesentliche Rolle. Dabei ist es egal\, um welche Phase eines Software-Lebenszyklus es gerade geht: Zeitliche Aspekte sind immer zu berücksichtigen. Der Vortrag zeigt dies an verschiedenen Beispielen und unterstreicht so die Bedeutung von Zeit im Kontext von ABAP.\n
+DTSTART:20221207T122000Z
+DTEND:20221207T125000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel2
+SUMMARY;LANGUAGE=en-us:ABAP und Zeit
+END:VEVENT
+END:VCALENDAR

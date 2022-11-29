@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/library"],function(){"use strict";sap.ui.getCore().initLibrary({name:"de.itsfullofstars.yt",version:"1.0.0",dependencies:["sap.ui.core"],types:[],interfaces:[],controls:["de.itsfullofstars.barcodescanner.controls.YTVideo"],elements:[]});return de.itsfullofstars.yt},false);

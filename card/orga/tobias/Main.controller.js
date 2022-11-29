@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/resource/ResourceModel"],function(e,a){"use strict";return e.extend("abapconf.web.abapconf.card.orga.tobias.Main",{onInit:function(){var e=new a({bundleName:"abapconf.web.abapconf.card.orga.tobias.i18n.i18n"});this.getView().setModel(e,"i18n")}})});

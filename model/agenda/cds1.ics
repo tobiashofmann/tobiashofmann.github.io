@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Eine neue Generation CDS-Views: CDS-View-Entitäten\nCDS-Views (DEFINE VIEW) sind die Grundlage von CDS-Datenmodellen und sind weit verbreitet in der Anwendungsentwicklung. Seit ABAP Release 7.55\, ABAP Platform 2020\, gibt es einen Nachfolger für die klassischen CDS-Views: CDS-View-Entitäten. Sie werden mit der Anweisung DEFINE VIEW ENTITY definiert und stellen eine verbesserte Version der klassischen Views dar. Durch neue Features\, eine verbesserte Architektur und schnellere Aktivierung bieten sie zahlreiche Vorteile. Seit Release 7.56 gibt es auch ein Migrationstool. Dieser Vortrag stellt CDS-View-Entitäten mit ihren neuen Features\, Verbesserungen und Unterschieden zu den klassischen CDS-Views vor und demonstriert die Migration. Einen Einstieg ins Thema bietet der folgende Blog Post:\nhttps://blogs.sap.com/2020/09/02/a-new-generation-of-cds-views-cds-view-entities/\n
+DTSTART:20221207T151500Z
+DTEND:20221207T160000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel2
+SUMMARY;LANGUAGE=en-us:Eine neue Generation CDS-Views: CDS-View-Entitäten
+END:VEVENT
+END:VCALENDAR

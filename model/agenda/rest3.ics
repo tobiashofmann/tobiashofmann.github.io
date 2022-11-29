@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Tweaking ABAP (aka ABAP enhancer)\nFun programming stuff for people who love to code and treat their program like a canvas.\nTips & tricks for ABAP syntax. Small functionalities to enhance the ABAP language. Larger utilities & tools to automate repetitive tasks. Techniques adopted from other programming languages.\n
+DTSTART:20221207T103000Z
+DTEND:20221207T111500Z
+LOCATION:https://www.abapconf.org/#/agenda/channel1
+SUMMARY;LANGUAGE=en-us:Tweaking ABAP (aka ABAP enhancer)
+URL:https://www.abapconf.org/#/agenda/channel1
+END:VEVENT
+END:VCALENDAR

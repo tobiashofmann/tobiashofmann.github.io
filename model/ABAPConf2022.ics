@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ABAPConf//DE
+BEGIN:VEVENT
+UID:3175274
+DTSTAMP:20221207T210000Z
+DTSTART;VALUE=DATE:20221207T073000Z
+DTEND;VALUE=DATE:20221207T210000Z
+SUMMARY:ABAPConf 2022
+DESCRIPTION:ABAPConf ist eine virtuelle Online-Konferenz mit Fokus auf die Programmiersprache ABAP. Sie wird dieses Jahr zum ersten Mal stattfinden. Die Organisation erfolgt durch verschiedene Entwickler und Berater aus der SAP Community. Von den Inhalten her werden Vorträge für Einsteiger und Experten, Workshops und Hintergrundgespräche in den Sprachen Deutsch und Englisch angeboten. Die Teilnahme ist kostenlos.
+X-ALT-DESC;FMTTYPE=text/html:<p>ABAPConf ist eine virtuelle Online-Konferenz mit Fokus auf die Programmiersprache ABAP. Sie wird dieses Jahr zum ersten Mal stattfinden. Die Organisation erfolgt durch verschiedene Entwickler und Berater aus der SAP Community. Von den Inhalten her werden Vorträge für Einsteiger und Experten, Workshops und Hintergrundgespräche in den Sprachen Deutsch und Englisch angeboten. Die Teilnahme ist kostenlos.</p>
+LOCATION:online, YouTube Live and at www.abapconf.org
+URL:https://www.abapconf.org/
+END:VEVENT
+END:VCALENDAR

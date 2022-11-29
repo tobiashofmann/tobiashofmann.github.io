@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:ABAP Quickfixes for S4/HANA Conversions\nDies ist eine Erweiterung zu dem bekannten ABAP Quickfixes Plugin von Łukasz. Ich habe dazu das Plugin von Łukasz um einen Extension Point erweitert. Das Plugin steht auch auf dem Marketplace zur Verfügung. https://marketplace.eclipse.org/content/abap-quickfix-s4-conversion Die Motivation für das Plugin bestand darin die speziellen Aufgaben\, die bei einem Conversion-Projekt anfallen\, besser zu unterstützen. Speziell ging es mir darum zunächst die Aufgabe die Umwandlung von select statements ohne order by Klausel zu unterstützen und hier auch insbesondere solche Tabellen zu unterstützen\, deren Key sich geändert hat: also eine individualisierbare Liste der order by Felder pflegbar zu machen.\n
+DTSTART:20221207T090500Z
+DTEND:20221207T095000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel1
+SUMMARY;LANGUAGE=en-us:ABAP Quickfixes for S4/HANA Conversions
+URL:https://www.abapconf.org/#/agenda/channel1
+END:VEVENT
+END:VCALENDAR

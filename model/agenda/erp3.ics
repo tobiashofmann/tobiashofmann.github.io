@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Eine S/4HANA Migration aus Entwicklersicht\nBei der Bahn sollen innerhalb eines S/4HANA Migratsionsprojektes nicht nur Businessprozesse übernommen und angepasst werden\, sondern auch vorhandene Eigenentwicklungen.\nDiese stammen aus unterschiedlichsten Zeiten\, zum Teil noch aus R/2\, und sind mit verschiedensten Technologien umgesetzt worden.\nDer Vortrag beschreibt die Herausforderungen\, die sich daraus ergeben und die Lösungsansätze\, die bei der Bahn verfolgt werden.\n
+DTSTART:20221207T134500Z
+DTEND:20221207T143000Z
+LOCATION:https://www.abapconf.org/#/agenda/channel2
+SUMMARY;LANGUAGE=en-us:Eine S/4HANA Migration aus Entwicklersicht
+END:VEVENT
+END:VCALENDAR
