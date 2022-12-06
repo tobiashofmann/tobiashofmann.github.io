@@ -535,7 +535,7 @@
                 ]
             },
             {
-                "title": "Inside Talk: RAP Runtime Engine (SADL,SEGW)",
+                "title": "Inside Talk: RAP Runtime Engine (SADL, SEGW)",
                 "abstract": "",
                 "track": 3,
                 "time": "10:05",
@@ -1039,7 +1039,27 @@
                         "color": 4
                     }
                 ]
+            },
+            {
+                "title": "Inside Talk: RAP Runtime Engine (SADL, SEGW)",
+                "abstract": "",
+                "track": 3,
+                "time": "10:05",
+                "duration": 45,
+                "language": "English",
+                "ics": "",
+                "tags": [
+                    {
+                        "name": "ABAP",
+                        "color": 2
+                    },
+                    {
+                        "name": "RAP",
+                        "color": 10
+                    }            
+                ]
             }
+
         ],
         "tags": [
             {
