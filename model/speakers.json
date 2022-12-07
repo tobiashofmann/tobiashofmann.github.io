@@ -106,6 +106,18 @@
                         "color": 1
                     }                    
                 ]
+            },
+            {
+                "title": "ADMP",
+                "abstract": "",
+                "track": 2,
+                "ics": "",
+                "tags": [
+                    {
+                        "name": "ABAP",
+                        "color": 1
+                    }                    
+                ]
             }
         ],
         "tags": [
@@ -144,6 +156,18 @@
                 "tags": [
                     {
                         "name": "Keynote",
+                        "color": 1
+                    }                    
+                ]
+            },
+            {
+                "title": "ADMP",
+                "abstract": "",
+                "track": 2,
+                "ics": "",
+                "tags": [
+                    {
+                        "name": "ABAP",
                         "color": 1
                     }                    
                 ]

@@ -563,6 +563,24 @@
                 "color": 2
             }            
         ]        
+    },
+    "rest5": {
+        "id": 18,
+        "speaker": "Johann Fößleitner",
+        "speaker2": "Domi Bigl",
+        "title": "AMDP",
+        "abstract": "AMDP",
+        "track": 2,
+        "time": "14:45",
+        "duration": 45,
+        "language": "Deutsch",
+        "ics": "./model/agenda/rest4.ics",
+        "tags": [
+            {
+                "name": "ABAP",
+                "color": 2
+            }
+        ]        
     }
     
 }
