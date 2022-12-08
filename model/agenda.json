@@ -294,29 +294,31 @@
         ]
     },
     "test1": {
-        "id": 12,
-        "speaker": "Dominik Panzer",
-        "title": "\"Oh man, wer hat DAS denn bitte programmiert?!? Oh, das war ja ich :-(\" - Legacy Code Refactoring - Live",
-        "abstract": "Irgendwann ist es soweit: Eine Erweiterung, Optimierung oder Fix ist notwendig. Du musst altes Coding anpacken. Und es sieht genau so aus, wie du es erwartest: wie Kraut und Rüben. Dein Puls schnellt nach oben - ein hektischer Blick in die Versionshistorie, um das Elend abzuwenden... wer DAS wohl war. Na warte. Der soll das doch bitte selbst machen! Und am besten noch eine Schulung besuchen!\nAber die Wahrheit ist hart: DU hast den Code selbst geschrieben. Dein 'Ich von vor 5 Jahren' war es und du hast es einfach schon lange vergessen. Aber dass du den Code als 'Kraut und Rüben' empfindest ist völlig okay - das zeigt, dass du etwas dazu gelernt hast und besser geworden bist.\nHeute möchte ich dir eine Klasse zeigen. Sie ist voller Code Smells. Sie hat Dependecies. Sie hat direkte SQL Queries. Ruft FuBas. Und sie hat natürlich keine Testabdeckung. Kraut und Rüben.\nDas wollen wir jetzt gemeinsam ändern! Zuerst werden wir das Coding unter Test setzen mit einigen gezielten Unit Tests. Natürlich gibt es dafür ein paar Hindernisse, die wir überwinden müssen. Dann, mit der hinzugewonnenen Sicherheit durch die Tests, werden wir das Coding klarer und strukturierter machen. Denn darum geht es: Verständlichkeit. Sie führt zu dem, was wir anstreben: langfristige Wartbarkeit und Erweiterbarkeit von Software.\nDie Übung ist selbstverständlich abstrahiert und vereinfacht. 'Kraut und Rüben' in Echtsystemen ist meist vielfach höher. Riesige Strukturen und Klassen. Aber mit dem Wissen aus diesem Vortrag, kannst du beginnen, dich daran heranszutasten und Schritt für Schritt eine Verbesserung herbeizuführen. Ich freue mich auf dich.",
-        "track": 2,
-        "time": "10:05",
-        "duration": 45,
-        "language": "Deutsch",
-        "ics": "./model/agenda/test1.ics",
-        "tags": [
-            {
-                "name": "ABAP",
-                "color": 2
-            },
-            {
-                "name": "Testing",
-                "color": 9
-            },
-            {
-                "name": "Classic ABAP",
-                "color": 5
-            }
-        ]
+      "id": 12,
+      "speaker": "Dominik Panzer",
+      "title": "\"Oh man, wer hat DAS denn bitte programmiert?!? Oh, das war ja ich :-(\" - Legacy Code Refactoring - Live",
+      "abstract": "Irgendwann ist es soweit: Eine Erweiterung, Optimierung oder Fix ist notwendig. Du musst altes Coding anpacken. Und es sieht genau so aus, wie du es erwartest: wie Kraut und Rüben. Dein Puls schnellt nach oben - ein hektischer Blick in die Versionshistorie, um das Elend abzuwenden... wer DAS wohl war. Na warte. Der soll das doch bitte selbst machen! Und am besten noch eine Schulung besuchen!\nAber die Wahrheit ist hart: DU hast den Code selbst geschrieben. Dein 'Ich von vor 5 Jahren' war es und du hast es einfach schon lange vergessen. Aber dass du den Code als 'Kraut und Rüben' empfindest ist völlig okay - das zeigt, dass du etwas dazu gelernt hast und besser geworden bist.\nHeute möchte ich dir eine Klasse zeigen. Sie ist voller Code Smells. Sie hat Dependecies. Sie hat direkte SQL Queries. Ruft FuBas. Und sie hat natürlich keine Testabdeckung. Kraut und Rüben.\nDas wollen wir jetzt gemeinsam ändern! Zuerst werden wir das Coding unter Test setzen mit einigen gezielten Unit Tests. Natürlich gibt es dafür ein paar Hindernisse, die wir überwinden müssen. Dann, mit der hinzugewonnenen Sicherheit durch die Tests, werden wir das Coding klarer und strukturierter machen. Denn darum geht es: Verständlichkeit. Sie führt zu dem, was wir anstreben: langfristige Wartbarkeit und Erweiterbarkeit von Software.\nDie Übung ist selbstverständlich abstrahiert und vereinfacht. 'Kraut und Rüben' in Echtsystemen ist meist vielfach höher. Riesige Strukturen und Klassen. Aber mit dem Wissen aus diesem Vortrag, kannst du beginnen, dich daran heranszutasten und Schritt für Schritt eine Verbesserung herbeizuführen. Ich freue mich auf dich.",
+      "track": 2,
+      "time": "10:05",
+      "YouTubeTimestamp": 6059,
+      "YouTubeHMSformat": "1:40:59",
+      "duration": 45,
+      "language": "Deutsch",
+      "ics": "./model/agenda/test1.ics",
+      "tags": [
+        {
+          "name": "ABAP",
+          "color": 2
+        },
+        {
+          "name": "Testing",
+          "color": 9
+        },
+        {
+          "name": "Classic ABAP",
+          "color": 5
+        }
+      ]
     },
     "test2": {
         "id": 13,
@@ -325,6 +327,8 @@
         "abstract": "Hazzle:  Unit test for code that uses SAP function modules, where you want to make sure that data is posted correctly by SAP.\nOften you have to use SAP BAPIs & Friends to post your changed business data. \nIn those cases it does not help to mock SAP as this is the core of the test.\nI'd like to show, how to make use of a constant fake database for unit test in development clients using SAP standard tools.",
         "track": 2,
         "time": "10:55",
+        "YouTubeTimestamp": 9004,
+        "YouTubeHMSformat": "2:30:04",
         "duration": 30,
         "language": "Deutsch",
         "ics": "./model/agenda/test2.ics",
@@ -350,6 +354,8 @@
         "abstract": "Unit Tests helfen bei der Implementierung und geben Sicherheit bei Änderungen an bestehendem Code.\nTestdaten im Entwicklungssystem helfen beim Debugging um den eigenen ABAP-Code zu verifizieren.\nBeides ist leider nicht selbstverständlich. Testdatencontainer können helfen die bestehenden Lücken zu schließen.\nAnhand von Code-Beispielen aus verschiedenen Projekten werde ich die Verwendung von Testdatencontainern in der Praxis zeigen. „Jedes Stück ABAP-Code sollte seinen Test mit ausgeliefert bekommen“.",
         "track": 2,
         "time": "11:30",
+        "YouTubeTimestamp": 11098,
+        "YouTubeHMSformat": "3:04:58",
         "duration": 45,
         "language": "Deutsch",
         "ics": "./model/agenda/test3.ics",
@@ -371,6 +377,8 @@
         "abstract": "Zeit ist für Menschen von großer Bedeutung. Entsprechend spielt sie in der IT und damit auch in ABAP eine wesentliche Rolle. Dabei ist es egal, um welche Phase eines Software-Lebenszyklus es gerade geht: Zeitliche Aspekte sind immer zu berücksichtigen. Der Vortrag zeigt dies an verschiedenen Beispielen und unterstreicht so die Bedeutung von Zeit im Kontext von ABAP.",
         "track": 2,
         "time": "13:20",
+        "YouTubeTimestamp": 17828,
+        "YouTubeHMSformat": "4:57:08",
         "duration": 30,
         "language": "Deutsch",
         "ics": "./model/agenda/erp1.ics",
@@ -392,6 +400,8 @@
         "abstract": "Das ABAP-basierte on-premise Software-Produkt 'EDI exakt' des SAP-Partners All for One Group wurde auf das SAP BTP, ABAP Environment portiert. Die Lösung wird dort als multitenancy-fähige SaaS-Anwendung betrieben. Der Vortrag schildert die technischen Rahmenbedingungen, Herausforderungen und Erfahrungen des Projektes.",
         "track": 2,
         "time": "13:55",
+        "YouTubeTimestamp": 19953,
+        "YouTubeHMSformat": "5:32:33",
         "duration": 45,
         "language": "Deutsch",
         "ics": "./model/agenda/erp2.ics",
@@ -442,6 +452,8 @@
         "abstract": "CDS-Views (DEFINE VIEW) sind die Grundlage von CDS-Datenmodellen und sind weit verbreitet in der Anwendungsentwicklung. Seit ABAP Release 7.55, ABAP Platform 2020, gibt es einen Nachfolger für die klassischen CDS-Views: CDS-View-Entitäten. Sie werden mit der Anweisung DEFINE VIEW ENTITY definiert und stellen eine verbesserte Version der klassischen Views dar. Durch neue Features, eine verbesserte Architektur und schnellere Aktivierung bieten sie zahlreiche Vorteile. Seit Release 7.56 gibt es auch ein Migrationstool. Dieser Vortrag stellt CDS-View-Entitäten mit ihren neuen Features, Verbesserungen und Unterschieden zu den klassischen CDS-Views vor und demonstriert die Migration. Einen Einstieg ins Thema bietet der folgende Blog Post:\nhttps://blogs.sap.com/2020/09/02/a-new-generation-of-cds-views-cds-view-entities/",
         "track": 2,
         "time": "16:15",
+        "YouTubeTimestamp": 28186,
+        "YouTubeHMSformat": "7:49:46",
         "duration": 45,
         "language": "Deutsch",
         "ics": "./model/agenda/cds1.ics",
@@ -463,6 +475,8 @@
         "abstract": "This session is for developers who want to learn more about some of the incredible capabilities of abapGit. We will describe and demo four of the lesser known but very powerful use cases of abapGit:\n1) Code on the Fly, Literally: Learn how abapGit saves the day when there’s no access to the internet\n2) Sharing is Caring: See how you can share code among colleagues, partners, and customers or contribute to the ABAP open-source community\n3) Travel Back in Time: Find out how to protect your ABAP apps and restore any part of them to any point in time on any release\n4) Feel the Fear and Do It Anyway: Discover how you can change or even delete any code or config without fear",
         "track": 1,
         "time": "17:05",
+        "YouTubeTimestamp": 31221,
+        "YouTubeHMSformat": "8:40:21",
         "duration": 45,
         "language": "English",
         "ics": "./model/agenda/rest4.ics",
@@ -583,6 +597,8 @@
         "abstract": "AMDP",
         "track": 2,
         "time": "14:45",
+        "YouTubeTimestamp": 19953,
+        "YouTubeHMSformat": "5:32:33",
         "duration": 45,
         "language": "Deutsch",
         "ics": "./model/agenda/rest4.ics",
