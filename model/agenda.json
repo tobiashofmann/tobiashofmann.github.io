@@ -294,31 +294,31 @@
         ]
     },
     "test1": {
-      "id": 12,
-      "speaker": "Dominik Panzer",
-      "title": "\"Oh man, wer hat DAS denn bitte programmiert?!? Oh, das war ja ich :-(\" - Legacy Code Refactoring - Live",
-      "abstract": "Irgendwann ist es soweit: Eine Erweiterung, Optimierung oder Fix ist notwendig. Du musst altes Coding anpacken. Und es sieht genau so aus, wie du es erwartest: wie Kraut und Rüben. Dein Puls schnellt nach oben - ein hektischer Blick in die Versionshistorie, um das Elend abzuwenden... wer DAS wohl war. Na warte. Der soll das doch bitte selbst machen! Und am besten noch eine Schulung besuchen!\nAber die Wahrheit ist hart: DU hast den Code selbst geschrieben. Dein 'Ich von vor 5 Jahren' war es und du hast es einfach schon lange vergessen. Aber dass du den Code als 'Kraut und Rüben' empfindest ist völlig okay - das zeigt, dass du etwas dazu gelernt hast und besser geworden bist.\nHeute möchte ich dir eine Klasse zeigen. Sie ist voller Code Smells. Sie hat Dependecies. Sie hat direkte SQL Queries. Ruft FuBas. Und sie hat natürlich keine Testabdeckung. Kraut und Rüben.\nDas wollen wir jetzt gemeinsam ändern! Zuerst werden wir das Coding unter Test setzen mit einigen gezielten Unit Tests. Natürlich gibt es dafür ein paar Hindernisse, die wir überwinden müssen. Dann, mit der hinzugewonnenen Sicherheit durch die Tests, werden wir das Coding klarer und strukturierter machen. Denn darum geht es: Verständlichkeit. Sie führt zu dem, was wir anstreben: langfristige Wartbarkeit und Erweiterbarkeit von Software.\nDie Übung ist selbstverständlich abstrahiert und vereinfacht. 'Kraut und Rüben' in Echtsystemen ist meist vielfach höher. Riesige Strukturen und Klassen. Aber mit dem Wissen aus diesem Vortrag, kannst du beginnen, dich daran heranszutasten und Schritt für Schritt eine Verbesserung herbeizuführen. Ich freue mich auf dich.",
-      "track": 2,
-      "time": "10:05",
-      "YouTubeTimestamp": 6059,
-      "YouTubeHMSformat": "1:40:59",
-      "duration": 45,
-      "language": "Deutsch",
-      "ics": "./model/agenda/test1.ics",
-      "tags": [
-        {
-          "name": "ABAP",
-          "color": 2
-        },
-        {
-          "name": "Testing",
-          "color": 9
-        },
-        {
-          "name": "Classic ABAP",
-          "color": 5
-        }
-      ]
+        "id": 12,
+        "speaker": "Dominik Panzer",
+        "title": "\"Oh man, wer hat DAS denn bitte programmiert?!? Oh, das war ja ich :-(\" - Legacy Code Refactoring - Live",
+        "abstract": "Irgendwann ist es soweit: Eine Erweiterung, Optimierung oder Fix ist notwendig. Du musst altes Coding anpacken. Und es sieht genau so aus, wie du es erwartest: wie Kraut und Rüben. Dein Puls schnellt nach oben - ein hektischer Blick in die Versionshistorie, um das Elend abzuwenden... wer DAS wohl war. Na warte. Der soll das doch bitte selbst machen! Und am besten noch eine Schulung besuchen!\nAber die Wahrheit ist hart: DU hast den Code selbst geschrieben. Dein 'Ich von vor 5 Jahren' war es und du hast es einfach schon lange vergessen. Aber dass du den Code als 'Kraut und Rüben' empfindest ist völlig okay - das zeigt, dass du etwas dazu gelernt hast und besser geworden bist.\nHeute möchte ich dir eine Klasse zeigen. Sie ist voller Code Smells. Sie hat Dependecies. Sie hat direkte SQL Queries. Ruft FuBas. Und sie hat natürlich keine Testabdeckung. Kraut und Rüben.\nDas wollen wir jetzt gemeinsam ändern! Zuerst werden wir das Coding unter Test setzen mit einigen gezielten Unit Tests. Natürlich gibt es dafür ein paar Hindernisse, die wir überwinden müssen. Dann, mit der hinzugewonnenen Sicherheit durch die Tests, werden wir das Coding klarer und strukturierter machen. Denn darum geht es: Verständlichkeit. Sie führt zu dem, was wir anstreben: langfristige Wartbarkeit und Erweiterbarkeit von Software.\nDie Übung ist selbstverständlich abstrahiert und vereinfacht. 'Kraut und Rüben' in Echtsystemen ist meist vielfach höher. Riesige Strukturen und Klassen. Aber mit dem Wissen aus diesem Vortrag, kannst du beginnen, dich daran heranszutasten und Schritt für Schritt eine Verbesserung herbeizuführen. Ich freue mich auf dich.",
+        "track": 2,
+        "time": "10:05",
+        "YouTubeTimestamp": 6059,
+        "YouTubeHMSformat": "1:40:59",
+        "duration": 45,
+        "language": "Deutsch",
+        "ics": "./model/agenda/test1.ics",
+        "tags": [
+            {
+                "name": "ABAP",
+                "color": 2
+            },
+            {
+                "name": "Testing",
+                "color": 9
+            },
+            {
+                "name": "Classic ABAP",
+                "color": 5
+            }
+        ]
     },
     "test2": {
         "id": 13,
