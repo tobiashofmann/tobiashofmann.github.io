@@ -137,6 +137,8 @@
         "duration": 30,
         "language": "English",
         "ics": "./model/agenda/rest2.ics",
+        "icon": "sap-icon://attachment-html",
+        "slide": "https://larshp.github.io/abapconf2022/",
         "tags": [
             {
                 "name": "ABAP",
@@ -155,6 +157,8 @@
         "duration": 45,
         "language": "English",
         "ics": "./model/agenda/rest3.ics",
+        "icon": "sap-icon://attachment-html",
+        "slide": "https://github.com/gmanousaridis/ABAP-Conf-2022",
         "tags": [
             {
                 "name": "ABAP",
@@ -233,6 +237,8 @@
         "duration": 45,
         "language": "English",
         "ics": "./model/agenda/bp3.ics",
+        "icon": "sap-icon://ppt-attachment",
+        "slide": "./card/speakers/pankaj/CC_stuff.pptx",
         "tags": [
             {
                 "name": "ABAP",
@@ -260,6 +266,8 @@
         "duration": 45,
         "language": "English",
         "ics": "./model/agenda/rap1.ics",
+        "icon": "sap-icon://ppt-attachment",
+        "slide": "./card/speakers/elias/RAP Troubleshooting - ABAP Cross Trace.pptx",
         "tags": [
             {
                 "name": "ABAP",
@@ -305,6 +313,8 @@
         "duration": 45,
         "language": "Deutsch",
         "ics": "./model/agenda/test1.ics",
+        "icon": "sap-icon://pdf-attachment",
+        "slide": "./card/speakers/dominik/20221108_ABAPConf_Wer_hat_das_denn programmiert.pdf",
         "tags": [
             {
                 "name": "ABAP",
@@ -332,6 +342,8 @@
         "duration": 30,
         "language": "Deutsch",
         "ics": "./model/agenda/test2.ics",
+        "icon": "sap-icon://pdf-attachment",
+        "slide": "./card/speakers/timo/ABAPConf_2022_Unit_Testing.pdf",
         "tags": [
             {
                 "name": "ABAP",
@@ -457,6 +469,8 @@
         "duration": 45,
         "language": "Deutsch",
         "ics": "./model/agenda/cds1.ics",
+        "icon": "sap-icon://pdf-attachment",
+        "slide": "./card/speakers/andrea/ABAP_Rollout_CDS_view_entities_ABAPConf.pdf",
         "tags": [
             {
                 "name": "ABAP",
@@ -480,6 +494,8 @@
         "duration": 45,
         "language": "English",
         "ics": "./model/agenda/rest4.ics",
+        "icon": "sap-icon://pdf-attachment",
+        "slide": "./card/speakers/marc/abapGit_Use_Cases.pdf",
         "tags": [
             {
                 "name": "ABAP",
@@ -593,11 +609,11 @@
         "id": 18,
         "speaker": "Johann Fößleitner",
         "speaker2": "Domi Bigl",
-        "title": "AMDP",
-        "abstract": "AMDP",
+        "title": "ABAP Managed Data Procedures AMDP",
+        "abstract": "ABAP Managed Data Procedures AMDP",
         "track": 2,
         "time": "14:45",
-        "YouTubeTimestamp": 19953,
+        "YouTubeTimestamp": 22895,
         "YouTubeHMSformat": "5:32:33",
         "duration": 45,
         "language": "Deutsch",
