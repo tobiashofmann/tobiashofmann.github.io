@@ -41,7 +41,11 @@ sap.ui.define([
 				showTableChannel3: true,
 				hideTableChannel12: false,
 				showEnglish: false,
-				showGerman: false
+				showGerman: false,
+				open: false,
+				videoicon: "sap-icon://video",
+				channel1: "https://www.youtube.com/watch?v=l5DEB-uwjAw",
+				channel2: "https://www.youtube.com/watch?v=Yeo9rz-7Pdc"
 			};
 			var oModel = new JSONModel(oData);
 			return oModel;

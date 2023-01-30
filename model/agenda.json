@@ -417,6 +417,8 @@
         "duration": 45,
         "language": "Deutsch",
         "ics": "./model/agenda/erp2.ics",
+        "icon": "sap-icon://pdf-attachment",
+        "slide": "./card/speakers/matthias/ABAPConf_2022_ABAP_in_der_Cloud_Erfahrungsbericht _Custom_Code_Migration.pdf",
         "tags": [
             {
                 "name": "ABAP",
