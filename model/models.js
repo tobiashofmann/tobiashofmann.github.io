@@ -1,1 +1,20 @@
-sap.ui.define(["sap/ui/model/json/JSONModel","sap/ui/Device"],function(e,n){"use strict";return{createDeviceModel:function(){var r=new e(n);r.setDefaultBindingMode("OneWay");return r},createHeaderViewModel:function(){var n={day:0,hour:0,minute:0,second:0,live:false};var r=new e(n);return r},createSessionDetailModel:function(n,r){n.info=r;var a=new e(n);return a},createAgendaViewModel:function(){var n={showTrack1:true,showTrack2:true,showTrack3:true,showTableChannel3:true,hideTableChannel12:false,showEnglish:false,showGerman:false};var r=new e(n);return r},createFooterViewModel:function(){var n=new e({showCookieNotice:true});return n}}});
+sap.ui.define(["sap/ui/model/json/JSONModel", "sap/ui/model/BindingMode", "sap/ui/Device"], function (JSONModel, BindingMode, Device) {
+  var __exports = {
+    createDeviceModel: () => {
+      const oModel = new JSONModel(Device);
+      oModel.setDefaultBindingMode(BindingMode.OneWay);
+      return oModel;
+    },
+    createViewModel: () => {
+      const data = {
+        rows: 5,
+        columns: Device.system.phone ? 4 : 5,
+        rowLayout: "20% 20% 20% 20% 20%",
+        columnLayout: "20% 20% 20% 20% 20%"
+      };
+      const model = new JSONModel(data);
+      return model;
+    }
+  };
+  return __exports;
+});

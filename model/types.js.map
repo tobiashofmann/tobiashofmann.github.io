@@ -1,0 +1,1 @@
+{"version":3,"file":"types.js","names":[],"sources":["types.ts"],"sourcesContent":["export interface BingoData {\r\n\trows: int;\r\n\tcolumns: int;\r\n\trowLayout: string;\r\n\tcolumnLayout: string\r\n}\r\n"],"mappings":""}

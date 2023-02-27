@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"],function(n){"use strict";return n.extend("abapconf.web.abapconf.card.speakers.andre.Main",{onInit:function(){}})});

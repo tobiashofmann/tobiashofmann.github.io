@@ -1,53 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" xml:lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html><head>
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="expires" content="0"> 
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI5 Application bingo</title>
 
-        <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any">
-        <link rel=”mask-icon” href=”favicon.svg” color=”#000000">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<script id="sap-ui-bootstrap" src="resources/sap-ui-custom.js" data-sap-ui-resourceroots="{
+				&quot;de.itsfullofstars.bingo.bingo&quot;: &quot;./&quot;
+			}" data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" data-sap-ui-compatversion="edge" data-sap-ui-async="true" data-sap-ui-frameoptions="trusted" data-sap-ui-theme="sap_horizon" data-sap-ui-xx-waitfortheme="true" data-sap-ui-xx-supportedlanguages="en,de">
+	</script>
 
-        <title>ABAPConf 2022</title>
-        <script
-            id="sap-ui-bootstrap"
-            src="https://sdk.openui5.org/1.108.2/resources/sap-ui-core.js" 
-            crossorigin="anonymous"
-            data-sap-ui-theme="sap_horizon"
-            data-sap-ui-resourceroots='{"abapconf.2022.org": "./"}'
-            data-sap-ui-compatVersion="edge"
-            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
-            data-sap-ui-async="true"
-			data-sap-ui-preload="async"
-            data-sap-ui-frameOptions="trusted"
-        ></script>
+</head>
 
-        <!-- Matomo -->
-        <!--
-        <script>
-            var _paq = window._paq = window._paq || [];
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(["setCookieDomain", "*.www.abapconf.org"]);
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-            var u="https://www.itsfullofstars.de/piwik/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '7']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-        -->
-        <!-- End Matomo Code -->
+<body class="sapUiBody">
+	<div data-sap-ui-component="" data-name="de.itsfullofstars.bingo.bingo"></div>
 
-    </head>
-    <body class="sapUiBody">
-        <div
-            data-sap-ui-component
-            data-name="abapconf.2022.org"
-            data-id="container"
-            data-settings='{"id" : "abapconf"}'
-        ></div>
-    </body>
-</html>
+</body></html>
