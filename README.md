@@ -34,5 +34,6 @@ _Take care of the comma at the end. Last position in the json file: no comma ple
 
 An app like this really helps to stay focused during a keynote. You will listen more carefully to the speaker(s) while trying to find out if a buzzword is mentioned in the keynote text or not. The more tiles you turn blue the more you'll get excited and follow even more closely the keynote. This really can help to transform a passive 30 to 90 minutes session into an entertaining pleasure. 
 
+___
 
-* failing to provide a working stream, having dozens of people present without any connection between the talks, featuring badly animated animals, straining the well-being of any person with a minimal expectation of hygiene, making the audience wonder why the keynote speaker is looking into the sky, featuring inappropriate examples, and the list can go on and on. Not only boring keynotes, but keynotes that let a listener left confused and ... embarrassed.
+(*) failing to provide a working stream, having dozens of people present without any connection between the talks, featuring badly animated animals, straining the well-being of any person with a minimal expectation of hygiene, making the audience wonder why the keynote speaker is looking into the sky, featuring inappropriate examples, and the list can go on and on. Not only boring keynotes, but keynotes that let a listener left confused and ... embarrassed.
