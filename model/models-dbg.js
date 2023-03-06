@@ -7,8 +7,10 @@ sap.ui.define(["sap/ui/model/json/JSONModel", "sap/ui/model/BindingMode", "sap/u
     },
     createViewModel: () => {
       const data = {
-        rows: 5,
+        rows: Device.system.phone ? 4 : 5,
+        maxRows: Device.system.phone ? 5 : 8,
         columns: Device.system.phone ? 4 : 5,
+        maxColumns: Device.system.phone ? 5 : 8,
         rowLayout: "20% 20% 20% 20% 20%",
         columnLayout: "20% 20% 20% 20% 20%"
       };

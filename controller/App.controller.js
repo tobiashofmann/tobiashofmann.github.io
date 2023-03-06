@@ -1,16 +1,2 @@
-sap.ui.define(["./BaseController"], function (__BaseController) {
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule && typeof obj.default !== "undefined" ? obj.default : obj;
-  }
-  const BaseController = _interopRequireDefault(__BaseController);
-  /**
-   * @namespace de.itsfullofstars.bingo.bingo.controller
-   */
-  const App = BaseController.extend("de.itsfullofstars.bingo.bingo.controller.App", {
-    onInit: function _onInit() {
-      // apply content density mode to root view
-      this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-    }
-  });
-  return App;
-});
+sap.ui.define(["./BaseController"],function(e){function n(e){return e&&e.__esModule&&typeof e.default!=="undefined"?e.default:e}const t=n(e);const o=t.extend("de.itsfullofstars.bingo.bingo.controller.App",{onInit:function e(){this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass())}});return o});
+//# sourceMappingURL=App.controller.js.map

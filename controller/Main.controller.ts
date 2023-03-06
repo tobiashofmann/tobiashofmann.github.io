@@ -1,5 +1,4 @@
 import BaseController from "./BaseController";
-import formatter from "../model/formatter";
 import JSONModel from "sap/ui/model/json/JSONModel";
 import models from "../model/models";
 import buzzword from "../model/buzzword";
@@ -8,23 +7,27 @@ import GenericTile from "sap/m/GenericTile";
 import Fragment from "sap/ui/core/Fragment";
 import * as library from "sap/m/library";
 import CSSGrid from "sap/ui/layout/cssgrid/CSSGrid";
+import syncStyleClass from "sap/ui/core/syncStyleClass";
+import Dialog from "sap/m/Dialog";
+import Control from "sap/ui/core/Control";
 
 /**
  * @namespace de.itsfullofstars.bingo.bingo.controller
  */
 export default class Main extends BaseController {
-	private formatter = formatter;
 	private elements: int;
 	private model: JSONModel;
 	private buzzwordsModel: JSONModel;
-	//private _legalInfoPopover: ActionSheet;
-
+	private _settingsDialog: Promise<Control | Control[]>;
+	
 	
 	public onInit() : void {
 
 		// view model
 		this.model = models.createViewModel();
 		this.setModel(this.model, "mainView");
+
+		this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
 
 		this.prepareLayout();
 		
@@ -38,19 +41,28 @@ export default class Main extends BaseController {
 		
 	}
 
+	/**
+	 * Prepares the overall layout of the app
+	 * columns and rows
+	 */
 	private prepareLayout() {
 		const rows: int = this.model.getProperty("/rows") as int;
 		const columns: int = this.model.getProperty("/columns") as int;
 		this.elements = rows * columns;
-		
 		this.calcColumns(columns);
 	}
 
+	/**
+	 * Navigate to legal disclosure
+	 */
 	public navToLegalDisclosure(): void {
 		const urlImpressum = "https://www.itsfullofstars.de/Impressum";
 		library.URLHelper.redirect(urlImpressum, true);
 	}
 
+	/**
+	 * Navigate to License file
+	 */
 	public navToLicense(): void {
 		const urlIcense = "/LICENSE";
 		library.URLHelper.redirect(urlIcense, true);
@@ -97,21 +109,55 @@ export default class Main extends BaseController {
 	
 	public onTilePress(event: Event): void {
 		const source:GenericTile = event.getSource() as GenericTile;
-		//source.setState("Disabled");
 		source.toggleStyleClass("bingoCardSelected");
 	}
 
 	private pickBuzzwords(): void {
-		console.log("pickBuzzwords");
 		if (this.elements <= this.buzzwordsModel.getProperty("/").length) {
 			let selectedWords:string[] = [];
 
 			selectedWords = buzzword.pickBuzzwords(this.buzzwordsModel, this.elements);
-			console.log(selectedWords);
+			//console.log(selectedWords);
 			
 			this.setModel(new JSONModel(selectedWords), "bingo");
 		}
 		
+	}
+
+	public onSettingsClose(): void {
+		this._settingsDialog
+		.then( (settingsDialog) => {
+			(settingsDialog as Dialog).close();
+			this.prepareLayout();
+			this.doReloadBuzzowrds();
+		})
+		.catch( () => console.log("Error"));
+	}
+
+
+	public doOpenSettings(): void {
+		const oView = this.getView();
+		// eslint-disable-next-line @typescript-eslint/no-misused-promises
+		if (!this._settingsDialog) {
+			this._settingsDialog = Fragment.load({
+				id:	oView.getId(),
+				name: "de.itsfullofstars.bingo.bingo.view.fragments.Settings",
+				controller: this
+			}).then( (oSettingsDialog) => {
+				const dialog = oSettingsDialog as Dialog;
+                oView.addDependent(dialog);
+				dialog.open();
+				syncStyleClass(this.getOwnerComponent().getContentDensityClass(), this.getView(), dialog);
+                return dialog;
+            });
+		} else {
+			this._settingsDialog
+			.then( (settingsDialog) => {
+				(settingsDialog as Dialog).open();
+			})
+			.catch( () => console.log("Error"));
+		}
+
 	}
 
 	public doReloadBuzzowrds(): void {

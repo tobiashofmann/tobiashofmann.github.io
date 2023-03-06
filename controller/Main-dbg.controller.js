@@ -1,23 +1,19 @@
-sap.ui.define(["./BaseController", "../model/formatter", "sap/ui/model/json/JSONModel", "../model/models", "../model/buzzword", "sap/ui/core/Fragment", "sap/m/library"], function (__BaseController, __formatter, JSONModel, __models, __buzzword, Fragment, library) {
+sap.ui.define(["./BaseController", "sap/ui/model/json/JSONModel", "../model/models", "../model/buzzword", "sap/ui/core/Fragment", "sap/m/library", "sap/ui/core/syncStyleClass"], function (__BaseController, JSONModel, __models, __buzzword, Fragment, library, syncStyleClass) {
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule && typeof obj.default !== "undefined" ? obj.default : obj;
   }
   const BaseController = _interopRequireDefault(__BaseController);
-  const formatter = _interopRequireDefault(__formatter);
   const models = _interopRequireDefault(__models);
   const buzzword = _interopRequireDefault(__buzzword);
   /**
    * @namespace de.itsfullofstars.bingo.bingo.controller
    */
   const Main = BaseController.extend("de.itsfullofstars.bingo.bingo.controller.Main", {
-    constructor: function constructor() {
-      BaseController.prototype.constructor.apply(this, arguments);
-      this.formatter = formatter;
-    },
     onInit: function _onInit() {
       // view model
       this.model = models.createViewModel();
       this.setModel(this.model, "mainView");
+      this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
       this.prepareLayout();
 
       // buzzowrd model. loaded from the "internet"
@@ -75,16 +71,43 @@ sap.ui.define(["./BaseController", "../model/formatter", "sap/ui/model/json/JSON
     },
     onTilePress: function _onTilePress(event) {
       const source = event.getSource();
-      //source.setState("Disabled");
       source.toggleStyleClass("bingoCardSelected");
     },
     pickBuzzwords: function _pickBuzzwords() {
-      console.log("pickBuzzwords");
       if (this.elements <= this.buzzwordsModel.getProperty("/").length) {
         let selectedWords = [];
         selectedWords = buzzword.pickBuzzwords(this.buzzwordsModel, this.elements);
-        console.log(selectedWords);
+        //console.log(selectedWords);
+
         this.setModel(new JSONModel(selectedWords), "bingo");
+      }
+    },
+    onSettingsClose: function _onSettingsClose() {
+      this._settingsDialog.then(settingsDialog => {
+        settingsDialog.close();
+        this.prepareLayout();
+        this.doReloadBuzzowrds();
+      }).catch(() => console.log("Error"));
+    },
+    doOpenSettings: function _doOpenSettings() {
+      const oView = this.getView();
+      // eslint-disable-next-line @typescript-eslint/no-misused-promises
+      if (!this._settingsDialog) {
+        this._settingsDialog = Fragment.load({
+          id: oView.getId(),
+          name: "de.itsfullofstars.bingo.bingo.view.fragments.Settings",
+          controller: this
+        }).then(oSettingsDialog => {
+          const dialog = oSettingsDialog;
+          oView.addDependent(dialog);
+          dialog.open();
+          syncStyleClass(this.getOwnerComponent().getContentDensityClass(), this.getView(), dialog);
+          return dialog;
+        });
+      } else {
+        this._settingsDialog.then(settingsDialog => {
+          settingsDialog.open();
+        }).catch(() => console.log("Error"));
       }
     },
     doReloadBuzzowrds: function _doReloadBuzzowrds() {

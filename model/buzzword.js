@@ -1,19 +1,2 @@
-sap.ui.define([], function () {
-  var __exports = {
-    pickBuzzwords(buzzwordsModel, elements) {
-      const selectedWords = [];
-      for (let i = 0; i < elements; i++) {
-        selectedWords.push(this.pickBuzzword(buzzwordsModel));
-      }
-      return selectedWords;
-    },
-    pickBuzzword(buzzwordsModel) {
-      const buzzwords = buzzwordsModel.getProperty("/");
-      const value = Math.floor(Math.random() * buzzwords.length);
-      const buzzword = buzzwords.splice(value, 1)[0];
-      buzzwordsModel.setProperty("/", buzzwords);
-      return buzzword;
-    }
-  };
-  return __exports;
-});
+sap.ui.define([],function(){var r={pickBuzzwords(r,t){const e=[];for(let n=0;n<t;n++){e.push(this.pickSingleBuzzword(r))}return e},pickSingleBuzzword(r){const t=r.getProperty("/");const e=Math.floor(Math.random()*t.length);const n=t.splice(e,1)[0];r.setProperty("/",t);return n}};return r});
+//# sourceMappingURL=buzzword.js.map

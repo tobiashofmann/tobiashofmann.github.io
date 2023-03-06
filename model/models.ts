@@ -15,8 +15,10 @@ export default {
 	createViewModel : () => {
 		
 		const data: BingoData = {
-			rows: 5,
-			columns: Device.system.phone ? 4:5,
+			rows: Device.system.phone ? 4 : 5,
+			maxRows: Device.system.phone ? 5 : 8,
+			columns: Device.system.phone ? 4 : 5,
+			maxColumns: Device.system.phone ? 5 : 8,
 			rowLayout: "20% 20% 20% 20% 20%",
 			columnLayout: "20% 20% 20% 20% 20%"
 		};

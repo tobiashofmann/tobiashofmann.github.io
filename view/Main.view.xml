@@ -9,6 +9,7 @@
 	<Page
 		title="{i18n>appTitle}">
 		<headerContent>
+			<Button id="doSettings" icon="sap-icon://settings" type="Transparent" press="doOpenSettings" />
 			<Button id="doReloadData" icon="sap-icon://refresh" type="Transparent" press="doReloadBuzzowrds" />
 			<Button id="legalMenu" icon="sap-icon://compare" tooltip="{i1n>legalInfo}" type="Transparent" press="onLegalInfoPress">
 				<layoutData>
@@ -31,10 +32,13 @@
 						width="auto"
 						sizeBehavior="Responsive"
 						press="onTilePress">
-						<TileContent class="sapUiNoMargin noMinWidth">
+						<TileContent class="sapUiNoMargin noMinWidth"> 
 							<Text
 								text="{bingo>value}"
 								class="sapUiNoMargin"
+								width="100%"
+								textAlign="Center"
+								
 								wrapping="true"
 								wrappingType="Hyphenated"
 								 />

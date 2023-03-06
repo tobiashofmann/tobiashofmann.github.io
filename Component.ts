@@ -20,16 +20,6 @@ export default class Component extends UIComponent {
 
 		this.setModel(models.createDeviceModel(), "device");
 
-/*
-		// buzzowrd model. loaded from the "internet"
-		const buzzwordsModel:JSONModel = this.getModel() as JSONModel;
-		buzzwordsModel.dataLoaded()
-		.then( () => {
-			console.log("buzzwords laoded");
-			console.log(buzzwordsModel.getData());
-		})
-		.catch( () => console.log("error"));		
-*/
 		// create the views based on the url/hash
 		this.getRouter().initialize();
 	}

@@ -3,11 +3,11 @@ sap.ui.define([], function () {
     pickBuzzwords(buzzwordsModel, elements) {
       const selectedWords = [];
       for (let i = 0; i < elements; i++) {
-        selectedWords.push(this.pickBuzzword(buzzwordsModel));
+        selectedWords.push(this.pickSingleBuzzword(buzzwordsModel));
       }
       return selectedWords;
     },
-    pickBuzzword(buzzwordsModel) {
+    pickSingleBuzzword(buzzwordsModel) {
       const buzzwords = buzzwordsModel.getProperty("/");
       const value = Math.floor(Math.random() * buzzwords.length);
       const buzzword = buzzwords.splice(value, 1)[0];
