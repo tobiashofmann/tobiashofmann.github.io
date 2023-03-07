@@ -113,5 +113,10 @@
     {"value": "Migrationsprojekte"},
     {"value": "Vision"},
     {"value": "Risiken"},
-    {"value": "Verlässlichkeit"}
+    {"value": "Verlässlichkeit"},
+    {"value": "Wartungsgebühren"},
+    {"value": "Produktstrategie"},
+    {"value": "End-to-End-Prozesse"},
+    {"value": "On-Premise"},
+    {"value": "DSGVO"}
 ]
