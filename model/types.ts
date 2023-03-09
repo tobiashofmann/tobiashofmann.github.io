@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 export interface BingoData {
 	rows: int;
 	maxRows: int;

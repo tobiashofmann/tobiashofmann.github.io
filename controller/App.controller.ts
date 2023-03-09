@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 import BaseController from "./BaseController";
 
 /**

@@ -1,4 +1,7 @@
 sap.ui.define([], function () {
+  /*
+  ${copyright}
+  */
   var __exports = {
     pickBuzzwords(buzzwordsModel, elements) {
       const selectedWords = [];

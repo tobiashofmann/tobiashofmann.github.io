@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 import JSONModel from "sap/ui/model/json/JSONModel";
 
 export default {

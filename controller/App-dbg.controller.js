@@ -2,6 +2,9 @@ sap.ui.define(["./BaseController"], function (__BaseController) {
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule && typeof obj.default !== "undefined" ? obj.default : obj;
   }
+  /*
+  ${copyright}
+  */
   const BaseController = _interopRequireDefault(__BaseController);
   /**
    * @namespace de.itsfullofstars.bingo.bingo.controller

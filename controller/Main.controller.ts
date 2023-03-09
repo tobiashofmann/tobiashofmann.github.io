@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 import BaseController from "./BaseController";
 import JSONModel from "sap/ui/model/json/JSONModel";
 import models from "../model/models";
@@ -64,7 +67,7 @@ export default class Main extends BaseController {
 	 * Navigate to License file
 	 */
 	public navToLicense(): void {
-		const urlIcense = "/LICENSE";
+		const urlIcense = "https://raw.githubusercontent.com/tobiashofmann/tobiashofmann.github.io/main/LICENSE";
 		library.URLHelper.redirect(urlIcense, true);
 	}
 

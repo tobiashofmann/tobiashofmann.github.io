@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 import Controller from "sap/ui/core/mvc/Controller";
 import UIComponent from "sap/ui/core/UIComponent";
 import AppComponent from "../Component";

@@ -1,6 +1,8 @@
+/*
+${copyright}
+*/
 import UIComponent from "sap/ui/core/UIComponent";
 import { support } from "sap/ui/Device";
-import JSONModel from "sap/ui/model/json/JSONModel";
 import models from "./model/models";
 
 /**

@@ -2,6 +2,9 @@ sap.ui.define(["./BaseController", "sap/ui/model/json/JSONModel", "../model/mode
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule && typeof obj.default !== "undefined" ? obj.default : obj;
   }
+  /*
+  ${copyright}
+  */
   const BaseController = _interopRequireDefault(__BaseController);
   const models = _interopRequireDefault(__models);
   const buzzword = _interopRequireDefault(__buzzword);
@@ -33,7 +36,7 @@ sap.ui.define(["./BaseController", "sap/ui/model/json/JSONModel", "../model/mode
       library.URLHelper.redirect(urlImpressum, true);
     },
     navToLicense: function _navToLicense() {
-      const urlIcense = "/LICENSE";
+      const urlIcense = "https://raw.githubusercontent.com/tobiashofmann/tobiashofmann.github.io/main/LICENSE";
       library.URLHelper.redirect(urlIcense, true);
     },
     onLegalInfoPress: function _onLegalInfoPress(event) {
