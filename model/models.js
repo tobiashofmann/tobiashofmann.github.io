@@ -1,2 +1,0 @@
-sap.ui.define(["sap/ui/model/json/JSONModel","sap/ui/model/BindingMode","sap/ui/Device"],function(e,n,o){var s={createDeviceModel:()=>{const s=new e(o);s.setDefaultBindingMode(n.OneWay);return s},createViewModel:()=>{const n={rows:o.system.phone?4:5,maxRows:o.system.phone?5:8,columns:o.system.phone?4:5,maxColumns:o.system.phone?5:8,rowLayout:"20% 20% 20% 20% 20%",columnLayout:"20% 20% 20% 20% 20%"};const s=new e(n);return s}};return s});
-//# sourceMappingURL=models.js.map
