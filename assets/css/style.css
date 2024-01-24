@@ -63,6 +63,16 @@ h6 {
   background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
+.row-padding {
+  padding-top: 20px;
+}
+.row-text-left {
+  text-align: left;
+}
+
+.row-text-right {
+  text-align: right;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

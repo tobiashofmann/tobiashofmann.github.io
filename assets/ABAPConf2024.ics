@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ABAPConf//DE
+TZID:Europe/Berlin
+BEGIN:VEVENT
+UID:3175274
+DTSTART;VALUE=DATE:20240606
+DTEND;VALUE=DATE:20240607
+SUMMARY:ABAPConf Europe 2024
+DESCRIPTION:The conference for ABAP developers, from ABAP developers. ABAP as we love it. Changing the deployment model, ABAPConf leaves the cloud and is now also offered as an on-premise edition.
+X-ALT-DESC;FMTTYPE=text/html:<p>The conference for ABAP developers, from ABAP developers. ABAP as we love it. Changing the deployment model, ABAPConf leaves the cloud and is now also offered as an on-premise edition.</p>
+LOCATION:SAP SE (ROT03), SAP-Allee 27, 68789 Sankt Leon-Rot, Germany, and live at YouTube.
+URL:https://www.abapconf.org/
+END:VEVENT
+END:VCALENDAR
