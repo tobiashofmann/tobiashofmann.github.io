@@ -12,7 +12,7 @@
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
 }
 
 a {
@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -132,6 +132,14 @@ h6 {
   color: #9195a2;
 }
 
+.section-sub-header {
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
 .section-with-bg {
   background-color: #f6f7fd;
 }
@@ -158,7 +166,7 @@ h6 {
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -188,7 +196,7 @@ h6 {
 /*--------------------------------------------------------------
 # Buy Tickets
 --------------------------------------------------------------*/
-.buy-tickets {
+.registration {
   color: #fff;
   background: #f82249;
   padding: 7px 22px;
@@ -202,17 +210,17 @@ h6 {
   white-space: nowrap;
 }
 
-.buy-tickets:hover {
+.registration:hover {
   background: none;
   color: #fff;
 }
 
-.buy-tickets:focus {
+.registration:focus {
   color: #fff;
 }
 
 @media (max-width: 992px) {
-  .buy-tickets {
+  .registration {
     margin: 0 15px 0 0;
   }
 }
@@ -250,7 +258,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   color: rgba(202, 206, 221, 0.8);
-  font-family: "Raleway", sans-serif;
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
@@ -473,9 +481,9 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
   height: 100vh;
   background: url(../img/ABAPConf.png) top center;
@@ -485,12 +493,12 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #home {
     background-attachment: fixed;
   }
 }
 
-#hero:before {
+#home:before {
   content: "";
   background: rgba(6, 12, 34, 0.8);
   position: absolute;
@@ -500,7 +508,7 @@ h6 {
   right: 0;
 }
 
-#hero .hero-container {
+#home .home-container {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -515,42 +523,42 @@ h6 {
 }
 
 @media (max-width: 991px) {
-  #hero .hero-container {
+  #home .home-container {
     top: 70px;
   }
 }
 
-#hero h1 {
+#home h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-#hero h1 span {
+#home h1 span {
   color: #f82249;
 }
 
 @media (max-width: 991px) {
-  #hero h1 {
+  #home h1 {
     font-size: 34px;
   }
 }
 
-#hero p {
+#home p {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
 }
 
 @media (max-width: 991px) {
-  #hero p {
+  #home p {
     font-size: 16px;
   }
 }
 
-#hero .play-btn {
+#home .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
@@ -560,7 +568,7 @@ h6 {
   overflow: hidden;
 }
 
-#hero .play-btn::after {
+#home .play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -575,7 +583,7 @@ h6 {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-#hero .play-btn:before {
+#home .play-btn:before {
   content: "";
   position: absolute;
   width: 120px;
@@ -593,12 +601,12 @@ h6 {
   background: rgba(198, 16, 0, 0);
 }
 
-#hero .play-btn:hover::after {
+#home .play-btn:hover::after {
   border-left: 15px solid #f82249;
   transform: scale(20);
 }
 
-#hero .play-btn:hover::before {
+#home .play-btn:hover::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -615,8 +623,8 @@ h6 {
   border-radius: 0;
 }
 
-#hero .about-btn {
-  font-family: "Raleway", sans-serif;
+#home .about-btn {
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -631,7 +639,7 @@ h6 {
   border: 2px solid #f82249;
 }
 
-#hero .about-btn:hover {
+#home .about-btn:hover {
   background: #f82249;
   color: #fff;
 }
@@ -1103,17 +1111,17 @@ h6 {
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
-#supporters {
+#sponsors {
   padding: 60px 0;
 }
 
-#supporters .supporters-wrap {
+#sponsors .sponsors-wrap {
   border-top: 1px solid #e0e5fa;
   border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
 
-#supporters .supporter-logo {
+#sponsors .supporter-logo {
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -1125,11 +1133,11 @@ h6 {
   height: 160px;
 }
 
-#supporters .supporter-logo:hover img {
+#sponsors .supporter-logo:hover img {
   transform: scale(1.2);
 }
 
-#supporters img {
+#sponsors img {
   transition: all 0.4s ease-in-out;
 }
 
@@ -1272,46 +1280,46 @@ h6 {
 /*--------------------------------------------------------------
 # Buy Tickets Section
 --------------------------------------------------------------*/
-#buy-tickets {
+#registration {
   padding: 60px 0;
 }
 
-#buy-tickets .card {
+#registration .card {
   border: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
 
-#buy-tickets .card:hover {
+#registration .card:hover {
   box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
 }
 
-#buy-tickets .card hr {
+#registration .card hr {
   margin: 25px 0;
 }
 
-#buy-tickets .card .card-title {
+#registration .card .card-title {
   margin: 10px 0;
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;
 }
 
-#buy-tickets .card .card-price {
+#registration .card .card-price {
   font-size: 48px;
   margin: 0;
 }
 
-#buy-tickets .card ul li {
+#registration .card ul li {
   margin-bottom: 20px;
 }
 
-#buy-tickets .card .text-muted {
+#registration .card .text-muted {
   opacity: 0.7;
 }
 
-#buy-tickets .card .btn {
+#registration .card .btn {
   font-size: 15px;
   border-radius: 50px;
   padding: 10px 40px;
@@ -1321,16 +1329,16 @@ h6 {
   color: #fff;
 }
 
-#buy-tickets .card .btn:hover {
+#registration .card .btn:hover {
   background-color: #e0072f;
 }
 
-#buy-tickets #buy-ticket-modal input,
-#buy-tickets #buy-ticket-modal select {
+#registration #buy-ticket-modal input,
+#registration #buy-ticket-modal select {
   border-radius: 0;
 }
 
-#buy-tickets #buy-ticket-modal .btn {
+#registration #buy-ticket-modal .btn {
   font-size: 15px;
   border-radius: 50px;
   padding: 10px 40px;
@@ -1340,7 +1348,7 @@ h6 {
   color: #fff;
 }
 
-#buy-tickets #buy-ticket-modal .btn:hover {
+#registration #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
 }
 
@@ -1516,7 +1524,7 @@ h6 {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
   font-weight: 700;
   color: #fff;
 }
@@ -1530,7 +1538,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: roboto, segoe, helvetica, 'open sans', sans-serif;
   color: #fff;
 }
 
